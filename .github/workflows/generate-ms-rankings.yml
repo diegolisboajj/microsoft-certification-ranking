@@ -1,0 +1,62 @@
+name: Generate Microsoft Certifications Rankings
+
+on:
+  schedule:
+    # Run daily at 01:00 UTC
+    - cron: '0 1 * * *'
+  workflow_dispatch:
+    # Allow manual trigger
+
+jobs:
+  generate-ms-rankings:
+    runs-on: ubuntu-latest
+    timeout-minutes: 1440  # 24 hours for safety
+    permissions:
+      contents: write  # Allow workflow to push changes
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install requests
+      
+      - name: Fetch Microsoft certification data
+        timeout-minutes: 1300  # Limit data fetching to ~21 hours
+        run: |
+          mkdir -p datasource_ms
+          chmod +x fetch_all_ms_countries.py
+          python3 fetch_all_ms_countries.py
+      
+      - name: Generate rankings
+        run: |
+          python3 generate_ms_rankings.py
+          
+          # Conditionally run community ranking scripts if they exist and are executable
+          if [ -f "generate_ms_brazil_community.py" ]; then
+            python3 generate_ms_brazil_community.py
+          fi
+      
+      - name: Commit and push rankings and CSVs
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # Add markdown files, CSV files in datasource, metadata, and known users lists
+          git add MS_TOP10_*.md datasource_ms/*.csv known_missing_users.json mscsv_metadata.json || true
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update Microsoft Certifications Rankings - $(date +'%Y-%m-%d')"
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
