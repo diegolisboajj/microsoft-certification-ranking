@@ -47,11 +47,17 @@ def fetch_user_badges_and_company(user_id, profile_url):
             for badge in badges:
                 issuer = badge.get('issuer', {})
                 entities = issuer.get('entities', [])
+                
                 is_ms = any(e.get('entity', {}).get('id') in MICROSOFT_ISSUER_IDS for e in entities)
                 
                 if not is_ms:
-                    if 'Microsoft' in issuer.get('summary', {}).get('name', ''):
-                        is_ms = True
+                    summary = issuer.get('summary', '')
+                    issuer_msg = ''
+                    if isinstance(summary, dict):
+                        issuer_msg = summary.get('name', '')
+                    else:
+                        issuer_msg = str(summary)
+                    if 'Microsoft' in issuer_msg: is_ms = True
                 
                 if is_ms:
                     name = badge.get('badge_template', {}).get('name', '')
