@@ -1,24 +1,18 @@
 # 🇧🇷 TOP 10 Microsoft Certifications - Brazil (Community)
 
-> Last updated: April 03, 2026 at 23:39 UTC
+> Last updated: April 03, 2026 at 23:44 UTC
 
 | Rank | Name | Badges | Company |
 |------|------|--------|---------|
 | 🥇 #1 | [Diego Giglioli](https://www.credly.com/users/diego-giglioli/badges) | 33 | Avanade |
-| 🥈 #2 | [Paulo Baima](https://www.credly.com/users/paulobaima/badges) | 29 | Microsoft |
-| 🥉 #3 | [Rafael Barros](https://www.credly.com/users/rbarros/badges) | 18 | Avanade |
-| #4 | [Ivan Alexandrino](https://www.credly.com/users/ivanalexandrino/badges) | 15 | Itaú |
-| #5 | [Francisco das Chagas Barroso de Sousa Filho](https://www.credly.com/users/francisco-das-chagas-barroso-de-sousa-filho/badges) | 11 | Mutant |
-| #6 | [Danilo Alexandre](https://www.credly.com/users/danilo-alexandre/badges) | 6 | Avanade |
-| #6 | [Maysa Anjos](https://www.credly.com/users/maysa-anjos/badges) | 6 | Avanade do Brasil |
-| #7 | [Diego Abreu](https://www.credly.com/users/diego-abreu/badges) | 5 | TIVIT |
-| #8 | [Luiz Bernardo](https://www.credly.com/users/brbernardo/badges) | 3 | Bedev |
-| #8 | [Wagner Azevedo](https://www.credly.com/users/wagnerazevedo/badges) | 3 | T-Systems do Brasil |
-| #9 | [Felipe Augusto](https://www.credly.com/users/felipementel/badges) | 2 | Avanade |
-| #9 | [Marcos Henrique Esteves Barbosa Alano](https://www.credly.com/users/marcos-alano/badges) | 2 | Dev.Pro |
-| #9 | [Renan Barbosa](https://www.credly.com/users/renan-barbosa.298b6fa2/badges) | 2 | Avanade Brasil |
-| #10 | [JEAN Cleber de oliveira ALVES](https://www.credly.com/users/jean-alves.b288cf8c/badges) | 1 | v8.tech |
-| #10 | [Keoma Baudin](https://www.credly.com/users/keoma-baudin/badges) | 1 | Capgemini |
-| #10 | [Rod Anami](https://www.credly.com/users/rod-anami/badges) | 1 | Kyndryl Brazil |
-| #10 | [Thiago Rider Augusto](https://www.credly.com/users/thiagorider/badges) | 1 | Stone Co. |
-| #10 | [Vinicius Baptista](https://www.credly.com/users/vinicius-baptista.cec9ea04/badges) | 1 | Certacon |
+| 🥈 #2 | [Inaldo Lopes Lopes](https://www.credly.com/users/inaldo-lopes/badges) | 32 |  |
+| 🥉 #3 | [Beatriz Matsui](https://www.credly.com/users/beatriz-matsui/badges) | 29 | Microsoft |
+| #4 | [Fabricio Assumpção](https://www.credly.com/users/fabricio-assumpcao.5e1ecfa4/badges) | 25 |  |
+| #5 | [Andre Dias](https://www.credly.com/users/andredias/badges) | 22 | Avanade |
+| #6 | [Rafael Barros](https://www.credly.com/users/rbarros/badges) | 18 | Avanade |
+| #7 | [Deivid De Foggi](https://www.credly.com/users/deivid-de-foggi/badges) | 17 | Microsoft |
+| #7 | [Filipe Duarte](https://www.credly.com/users/filipe-duarte.3c29541f/badges) | 17 |  |
+| #8 | [Yan Borowski Machado](https://www.credly.com/users/yan-borowski-machado/badges) | 14 | Avanade |
+| #9 | [Joao Marcelo Domingos Bruno](https://www.credly.com/users/joao-marcelo-domingos-bruno/badges) | 11 |  |
+| #9 | [Victor Fuctuoso](https://www.credly.com/users/victor-fuctuoso/badges) | 11 | Avanade Brazil |
+| #10 | [Fabrizzio Casamento](https://www.credly.com/users/fabrizzio-casamento/badges) | 9 | Technology |
