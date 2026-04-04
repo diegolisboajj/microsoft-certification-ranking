@@ -1,19 +1,101 @@
-first_name,middle_name,last_name,badge_count,profile_url
-Jonathan,Ovares,Amador,3,/users/jonathan-ovares-amador/badges
-Jorge,,Arguedas Jimenez,1,/users/jorge-arguedas-jimenez/badges
-Carlos,,Chavarria,3,/users/carlos-chacon/badges
-Kevin,,Contreras,1,/users/kevin-contreras.c97512e4/badges
-Roberto,,Lizano Godínez,1,/users/roberto-lizano-godinez/badges
-Edgar,,Madrigal,3,/users/edgar-madrigal.62d9d9b5/badges
-Carolina,,Marin Cascante,1,/users/carolina-marin-cascante/badges
-Gabriel,,Melendez Rojas,3,/users/gabriel-melendez-rojas/badges
-Carlos,,Monge Miranda,1,/users/carlos-monge-miranda/badges
-César,,Oviedo,9,/users/cesar-oviedo.f990f363/badges
-Marco,,Prado,11,/users/marcoprado/badges
-Nestor,,Reveron,47,/users/nestor-reveron/badges
-Jonnathan,,Rojas,1,/users/jonnathan-rojas.66598a2a/badges
-Alexey,,Romero,1,/users/alexey-romero/badges
-Roberto,,Sánchez,1,/users/roberto-sanchez.4365bef8/badges
-Sergio,,Turrent,2,/users/sturrent/badges
-Victor,Manuel,Vargas Miranda,2,/users/victor-vargas-vargas-miranda/badges
-Joseph,,Villarreal,1,/users/joseph-villarreal.257f87dc/badges
+first_name,middle_name,last_name,badge_count,profile_url,badge_names
+Darién,,Aguilar Flores,1,/users/darien-aguilar-flores/badges,GitHub Foundations
+Andres,,Aiello,1,/users/andres-aiello/badges,GitHub Copilot
+Josseline,,Alfaro Araya,1,/users/josseline-alfaro-araya/badges,GitHub Foundations
+Ricardo,,Alfaro,1,/users/ricardo-alfaro.adf72d8e/badges,GitHub Foundations
+Jonathan,Ovares,Amador,5,/users/jonathan-ovares-amador/badges,"GitHub Foundations|Microsoft 365 Certified: Fundamentals|Microsoft 365 Certified: Teams Administrator Associate|Microsoft Certified: Azure Fundamentals|Microsoft Certified: Security, Compliance, and Identity Fundamentals"
+Victor,,Ardon Rojas,1,/users/victor-ardon-rojas/badges,GitHub Foundations
+Luis,,Ardon,2,/users/luis-ardon.4d360e82/badges,GitHub Foundations|Microsoft Certified: Azure Fundamentals
+Jorge,,Arguedas Jimenez,2,/users/jorge-arguedas-jimenez/badges,GitHub Foundations|Microsoft Certified: Azure Fundamentals
+Andres,,Arias Corrales,1,/users/andres-arias-corrales/badges,GitHub Copilot
+Ricardo,,Arias,1,/users/rariassec/badges,GitHub Foundations
+MILTON,,BARRERA ZEPEDA,1,/users/milton-barrera-zepeda/badges,GitHub Foundations
+Wendy,,Badilla Carvajal,1,/users/wendy-badilla-carvajal/badges,GitHub Foundations
+Juan Carlos,,Barboza Padilla,1,/users/juan-carlos-barboza-padilla.3c16412b/badges,GitHub Foundations
+Diego,,Barquero,1,/users/diego-barquero.5165ee76/badges,GitHub Foundations
+Rodrigo,,Barrantes,3,/users/rodrigo-barrantes/badges,FY26 GitHub Copilot Partner Sales Credential|GitHub Partner Technical Sales Professional Credential|GitHub Sales Professional
+Daniel,,Barrientos Salas,1,/users/daniel-barrientos-salas/badges,GitHub Foundations
+Richard,,Bolaños Moya,1,/users/richard-bolanos-moya/badges,GitHub Copilot
+Gabriel,,Cabalceta,1,/users/gabriel-cabalceta/badges,GitHub Foundations
+Andres,,Calvo,1,/users/andres-calvo.3125206b/badges,GitHub Foundations
+José,,Camacho Vargas,1,/users/jose-camacho-vargas/badges,GitHub Foundations
+José David,,Camacho Vargas,4,/users/jose-david-camacho-vargas.79565850/badges,GitHub Actions|GitHub Administration|GitHub Advanced Security|GitHub Copilot
+Carlos Alberto,,Castillo Oporta,1,/users/carlos-alberto-castillo-oporta/badges,GitHub Actions
+Jose,,Cespedes Downing,1,/users/jose-cespedes-downing/badges,GitHub Foundations
+Carlos,,Chavarria,11,/users/carlos-chacon/badges,AZ-303: Microsoft Azure Architect Technologies|AZ-304: Microsoft Azure Architect Design|AZ-400: Designing and Implementing Microsoft DevOps Solutions|GitHub Actions|Microsoft Certified: Azure Administrator Associate|Microsoft Certified: Azure Administrator Associate (Legacy)|Microsoft Certified: Azure Network Engineer Associate|Microsoft Certified: Azure Security Engineer Associate|Microsoft Certified: Azure Solutions Architect Expert|Microsoft Certified: Azure Virtual Desktop Specialty|Microsoft Certified: DevOps Engineer Expert
+Carlos,,Contreras Calderón,1,/users/carlos-contreras-calderon/badges,GitHub Foundations
+Kevin,,Contreras,2,/users/kevin-contreras.c97512e4/badges,GitHub Actions|Microsoft Certified: Azure Fundamentals
+Roberto,,Cordero Jimenez,2,/users/roberto-cordero-jimenez/badges,GitHub Foundations|Microsoft Certified: Power BI Data Analyst Associate
+Andy,,Cubero Chavarría,1,/users/andy-cubero-chavarria/badges,GitHub Foundations
+Marco,,Espinoza,1,/users/marco-espinoza.ade046a5/badges,GitHub Foundations
+Diana,,Fernandez,1,/users/diana-fernandez.fba00f61/badges,GitHub Foundations
+Lorenzo,,Fuentes Soto,2,/users/lorenzo-fuentes-soto/badges,GitHub Actions|GitHub Foundations
+Sebastian,,Garcia,1,/users/devopschamp/badges,GitHub Actions
+Arturo,,García Rodríguez,1,/users/arturo-garcia-rodriguez/badges,GitHub Advanced Security
+Carlos Akión,,Garro Campos,2,/users/carlos-akion-garro-campos/badges,GitHub Actions|GitHub Administration
+Hanzel,,Godinez Hidalgo,1,/users/hanzel-godinez-hidalgo/badges,GitHub Foundations
+Denisse,,González,1,/users/denisse-gonzalez.b0d37d5a/badges,GitHub Copilot
+Kevin,Andrés,Hernández Rostrán,1,/users/kevinah95/badges,GitHub Foundations
+Isaac,,Herrera,1,/users/isaac-herrera.0dd90541/badges,GitHub Foundations
+Juan Gabriel,,Jimenez Vargas,3,/users/gabriel-jimenez-v/badges,GitHub Actions|GitHub Administration|GitHub Advanced Security
+Santiago,,Jiménez,1,/users/santiago-jimenez.338528f9/badges,GitHub Foundations
+Alessandra,,Kessler Valdivia,1,/users/alessandra-kessler-valdivia/badges,GitHub Foundations
+Yareth,Gerardo,Leal Arguedas,1,/users/yareth-leal/badges,GitHub Foundations
+Nicole,,Leitón,1,/users/nicole-leiton/badges,GitHub Foundations
+Andrea,,Lineros,1,/users/andrea-lineros/badges,GitHub Foundations
+Roberto,,Lizano Godínez,2,/users/roberto-lizano-godinez/badges,GitHub Foundations|Microsoft Certified: Azure Fundamentals
+Brandon Marconi,,Loria Duran,1,/users/brandon-marconi-loria-duran/badges,GitHub Foundations
+Edgar,,Madrigal,6,/users/edgar-madrigal.62d9d9b5/badges,GitHub Actions|GitHub Administration|GitHub Foundations|Microsoft 365 Certified: Fundamentals|Microsoft Certified: Azure Fundamentals|Microsoft Certified: Power Platform Fundamentals
+Carolina,,Marin Cascante,2,/users/carolina-marin-cascante/badges,GitHub Actions|Microsoft Certified: Azure Fundamentals
+Mauricio,,Maroto,4,/users/mauricio-maroto/badges,GitHub Actions|GitHub Copilot|GitHub Foundations|Microsoft Certified: Azure Data Scientist Associate
+Gabriel,,Melendez Rojas,5,/users/gabriel-melendez-rojas/badges,Exam 483: Programming in C#|GitHub Foundations|Microsoft Certified: AI Transformation Leader|Microsoft Certified: Azure Data Fundamentals|Microsoft Certified: Azure Fundamentals
+Julio,,Miranda López,1,/users/julio-miranda-lopez/badges,GitHub Foundations
+Andres,,Molina Trejos,1,/users/andres-molina-trejos/badges,GitHub Foundations
+Carlos,,Monge Miranda,2,/users/carlos-monge-miranda/badges,GitHub Foundations|Microsoft Certified: Azure Fundamentals
+Fabricio,,Montanari Vargas,1,/users/fabricio-montanari-vargas/badges,GitHub Foundations
+Sergio,,Montenegro,1,/users/sergio-montenegro.9b4f8fc0/badges,GitHub Foundations
+Kembly,,Mora Arias,1,/users/kembly-mora-arias/badges,GitHub Foundations
+Antony,,Mora,1,/users/antony-mora.5c44b6be/badges,GitHub Foundations
+Tyler,Geovanny,Morales Muir,1,/users/tyler-morales.9481af57/badges,GitHub Foundations
+Jose Pablo,,Munoz,1,/users/jose-pablo-munoz/badges,GitHub Foundations
+Priscila,,Murillo,1,/users/priscila-murillo/badges,GitHub Foundations
+Esteban,,Navarro Badilla,1,/users/esteban-navarro-badilla/badges,GitHub Foundations
+Kevin,,Obando Molina,1,/users/kevin-obando-molina/badges,GitHub Foundations
+Javier Alberto,,Ortiz Oreamuno,2,/users/javier-alberto-ortiz-oreamuno/badges,GitHub Advanced Security|GitHub Foundations
+César,,Oviedo,13,/users/cesar-oviedo.f990f363/badges,2023 Microsoft Most Valuable Professional (MVP)|2025 Microsoft Most Valuable Professional (MVP)|Exam 246: Monitoring and Operating a Private Cloud with System Center 2012|Exam 461: Querying Microsoft SQL Server 2012/2014|Exam 462: Administering Microsoft SQL Server 2012/2014 Databases|Exam 463: Implementing a Data Warehouse with Microsoft SQL Server 2012/2014|Exam 466: Implementing Data Models and Reports with Microsoft SQL Server|Exam 480: Programming in HTML5 with JavaScript and CSS3|Exam 498: Delivering Continuous Value with Visual Studio Application Lifecycle Management|GitHub Administration|MCSA: SQL Server 2012/2014 - Certified 2016|Microsoft Certified Trainer 2023-2024|Microsoft Certified: Azure Data Engineer Associate
+Gustavo,,Palma,2,/users/gustavo-palma.7b2da021/badges,GitHub Partner Technical Sales Professional Credential|GitHub Sales Professional
+Carlos,,Poltronieri,1,/users/carlos-poltronieri/badges,GitHub Foundations
+Marco,,Prado,42,/users/marcoprado/badges,AZ-400: Designing and Implementing Microsoft DevOps Solutions|Accessibility in Action|Collaborator - Cloud Adoption Framework for Azure|Event Speaker Silver|Exam 533: Implementing Microsoft Azure Infrastructure Solutions|Exam 535: Architecting Microsoft Azure Solutions|FY24 Value Based Delivery Silver|FY25 LevelUp Luminary|FY25 Value Acceleration IP Contributor - Gold|FY26 LevelUp Luminary|FY26 Value Acceleration IP Contributor - Silver|GitHub Actions|Leader - Cloud Adoption Framework for Azure|MCSA: Cloud Platform - Certified 2018|Microsoft Airlift 2024 - Speaker|Microsoft Certified Trainer 2018-2019|Microsoft Certified Trainer 2019-2020|Microsoft Certified Trainer 2020-2021|Microsoft Certified Trainer 2021-2022|Microsoft Certified Trainer 2022-2023|Microsoft Certified Trainer 2023-2024|Microsoft Certified: Azure AI Engineer Associate|Microsoft Certified: Azure Administrator Associate|Microsoft Certified: Azure Administrator Associate (Legacy)|Microsoft Certified: Azure Data Scientist Associate|Microsoft Certified: Azure Developer Associate|Microsoft Certified: Azure IoT Developer Specialty|Microsoft Certified: Azure Security Engineer Associate|Microsoft Certified: Azure Solutions Architect Expert|Microsoft Certified: Azure Solutions Architect Expert (Legacy)*|Microsoft Certified: DevOps Engineer Expert|Microsoft Global Challenger|Microsoft Global Hackathon 2022|Microsoft Global Hackathon 2023|Migrating Microsoft Workloads to Azure Coach|OpenHack: Containers Coach|OpenHack: Containers Tech Lead|OpenHack: DevOps|OpenHack: DevOps Coach|OpenHack: DevOps Tech Lead|OpenHack: Migrating Microsoft Workloads to Azure Tech Lead|Technical Leadership Development Program - Alumni
+Sebastian,,QO,1,/users/sebastian-qo/badges,GitHub Foundations
+Paula,,Quesada Lobo,1,/users/paula-quesada-lobo.1eac531c/badges,GitHub Foundations
+Nestor,,Reveron,107,/users/nestor-reveron/badges,"AZ-300 Microsoft Azure Architect Technologies|AZ-301 Microsoft Azure Architect Design|AZ-303: Microsoft Azure Architect Technologies|AZ-304: Microsoft Azure Architect Design|AZ-305: Designing Microsoft Azure Infrastructure Solutions|AZ-400: Designing and Implementing Microsoft DevOps Solutions|AZ-800: Administering Windows Server Hybrid Core Infrastructure|AZ-801: Configuring Windows Server Hybrid Advanced Services|Accessibility in Action|Copilot for M365 Achiever Badge - Foundational|Copilot for Microsoft 365 Security Champion —​ FY24 Participant|Copilot for Microsoft 365 Technical Champion|Copilot for Security | Sales Skills Achiever Badge|Copilot for Security | Technical Skills Achiever Badge|Customer Facing Skills Initiative: Strategic Communication|DP-200 Implementing an Azure Data Solution|DP-201 Designing an Azure Data Solution|Defender for Cloud Black Belt|Evangelist - Azure Architecture Center|Event Speaker Silver|Exam 246: Monitoring and Operating a Private Cloud with System Center 2012|Exam 247: Configuring and Deploying a Private Cloud with System Center 2012|Exam 331: Core Solutions of Microsoft SharePoint Server 2013|Exam 346: Managing Office 365 Identities and Requirements|Exam 347: Enabling Office 365 Services|Exam 410: Installing and Configuring Windows Server 2012|Exam 411: Administering Windows Server 2012|Exam 412: Configuring Advanced Windows Server 2012 Services|Exam 413: Designing and Implementing a Server Infrastructure|Exam 414: Implementing an Advanced Server Infrastructure|Exam 532: Developing Microsoft Azure Solutions|Exam 533: Implementing Microsoft Azure Infrastructure Solutions|Exam 534: Architecting Microsoft Azure Solutions|Exam 743: Upgrading Your Skills to MCSA: Windows Server 2016|External User Group Silver|GitHub Actions|GitHub Administration|GitHub Advanced Security|L1 Cloud Security Product Champion|L2 Cloud Security Product Influencer|L3 Defender for Cloud Influencer|MCSA: Cloud Platform - Certified 2016|MCSA: Office 365 - Certified 2017|MCSA: Windows Server 2012 - Certified 2016|MCSA: Windows Server 2016 - Certified 2016|MCSE: Cloud Platform and Infrastructure — Certified 2016|MCSE: Productivity — Certified 2016|MCSE: Productivity — Certified 2017|MS-100: Microsoft 365 Identity and Services|MS-101: Microsoft 365 Mobility and Security|Mentor Silver|Microsoft 365 Certified: Enterprise Administrator Expert|Microsoft 365 Certified: Fundamentals|Microsoft 365 Certified: Security Administrator Associate*|Microsoft 365 Certified: Teams Administrator Associate|Microsoft 365 Copilot AI Navigator Badge|Microsoft Certified Trainer 2017-2018|Microsoft Certified Trainer 2018-2019|Microsoft Certified Trainer 2019-2020|Microsoft Certified Trainer 2020-2021|Microsoft Certified Trainer 2021-2022|Microsoft Certified Trainer 2022-2023|Microsoft Certified Trainer 2023-2024|Microsoft Certified: Azure AI Engineer Associate|Microsoft Certified: Azure AI Fundamentals|Microsoft Certified: Azure Administrator Associate|Microsoft Certified: Azure Administrator Associate (Legacy)|Microsoft Certified: Azure Cosmos DB Developer Specialty|Microsoft Certified: Azure Data Engineer Associate|Microsoft Certified: Azure Data Fundamentals|Microsoft Certified: Azure Database Administrator Associate|Microsoft Certified: Azure Developer Associate|Microsoft Certified: Azure Developer Associate (Legacy)|Microsoft Certified: Azure Fundamentals|Microsoft Certified: Azure Network Engineer Associate|Microsoft Certified: Azure Security Engineer Associate|Microsoft Certified: Azure Solutions Architect Expert|Microsoft Certified: Azure Solutions Architect Expert (Legacy)*|Microsoft Certified: Azure Stack Hub Operator Associate|Microsoft Certified: Azure Virtual Desktop Specialty|Microsoft Certified: Azure for SAP Workloads Specialty|Microsoft Certified: Cybersecurity Architect Expert|Microsoft Certified: DevOps Engineer Expert|Microsoft Certified: Identity and Access Administrator Associate|Microsoft Certified: Information Protection Administrator Associate|Microsoft Certified: Information Security Administrator Associate|Microsoft Certified: Security Operations Analyst Associate|Microsoft Certified: Security, Compliance, and Identity Fundamentals|Microsoft Certified: Windows Server Hybrid Administrator Associate|Microsoft Global Challenger|Microsoft Global Hackathon 2022|Microsoft Global Hackathon 2024|Microsoft Global Hackathon 2025|Microsoft SkillUp AI|Migrating Microsoft Workloads to Azure Coach|OpenHack: App Modernization with NoSQL|OpenHack: App Modernization with NoSQL Tech Lead|OpenHack: Cloud-based Data Warehousing Coach|OpenHack: Containers|OpenHack: Containers Coach|OpenHack: Containers Tech Lead|OpenHack: Migrating Microsoft Workloads to Azure|OpenHack: Migrating Microsoft Workloads to Azure Tech Lead|OpenHack: Security, Compliance, and Identity|OpenHack: Security, Compliance, and Identity Coach|OpenHack: Security, Compliance, and Identity Tech Lead|SC-100: Microsoft Cybersecurity Architect"
+Armando,,Rodriguez,1,/users/armando-rodriguez.5bb04f83/badges,GitHub Foundations
+Emilio,José,Rodríguez Briceño,1,/users/emilio-rodriguez.5200a18f/badges,GitHub Foundations
+Luis Eduardo,,Rojas Carrillo,1,/users/luis-eduardo-rojas-carrillo/badges,GitHub Foundations
+Olger,,Rojas Rodríguez,1,/users/olger-rojas-rodriguez/badges,GitHub Copilot
+Jonnathan,,Rojas,2,/users/jonnathan-rojas.66598a2a/badges,GitHub Foundations|Microsoft Certified: Azure Fundamentals
+Jorge,,Rojas,2,/users/jorge-rojas.3c8ceae7/badges,GitHub Foundations|Microsoft Certified: Power Platform Functional Consultant Associate
+Jose,,Rojas,1,/users/jose-rojas.c22298f2/badges,GitHub Foundations
+Alexey,,Romero,2,/users/alexey-romero/badges,GitHub Foundations|Microsoft Certified: Power Platform Fundamentals
+Sergio,,Romero,2,/users/rsergio/badges,GitHub Copilot|GitHub Foundations
+Alejandro,,Rosales,2,/users/alejandro-rosales.131dce32/badges,GitHub Actions|GitHub Advanced Security
+Brandon,,Ruiz,1,/users/brandon-ruiz.45906e8a/badges,GitHub Foundations
+Valeria,,Salas Hernández,1,/users/valeria-salas-hernandez/badges,GitHub Foundations
+Jeremy Sebastian,,Segura Quiros,1,/users/jeremy-sebastian-segura-quiros/badges,GitHub Foundations
+Valmore,,Shaw,1,/users/valmore-shaw/badges,GitHub Actions
+Fabián,,Sojo,1,/users/fabian-sojo/badges,GitHub Foundations
+Marcelo,,Solorzano,1,/users/marcelo-solorzano/badges,GitHub Foundations
+Fabián Alejandro,,Sánchez Durán,1,/users/fabian-alejandro-sanchez-duran/badges,GitHub Foundations
+Roberto,,Sánchez,2,/users/roberto-sanchez.4365bef8/badges,GitHub Foundations|Microsoft Certified: Azure Fundamentals
+Sergio,,Turrent,9,/users/sturrent/badges,AZ-400: Designing and Implementing Microsoft DevOps Solutions|Accessibility in Action|GitHub Advanced Security|GitHub Foundations|Microsoft Certified: Azure Administrator Associate|Microsoft Certified: Azure Fundamentals|Microsoft Certified: DevOps Engineer Expert|Microsoft Global Hackathon 2025|Microsoft Global Hackathon 2025 Executive Challenge Winner
+Victor,Manuel,Vargas Miranda,3,/users/victor-vargas-vargas-miranda/badges,GitHub Actions|Microsoft Certified: Azure Data Fundamentals|Microsoft Certified: Azure Fundamentals
+Sebastián,,Velázquez Guillén,1,/users/sebastian-velazquez-guillen/badges,GitHub Foundations
+Guillermo,,Villalobos,1,/users/guillermo-villalobos.e1565c99/badges,GitHub Foundations
+Joseph,,Villarreal,2,/users/joseph-villarreal.257f87dc/badges,GitHub Foundations|Microsoft Certified: Azure Fundamentals
+Jason,,Zamora,1,/users/jason-zamora.d9ca3acb/badges,GitHub Foundations
+Sebas,,Zavala,1,/users/sebas-zavala/badges,GitHub Foundations
+kevin,,abarca,1,/users/kevin-abarca.15f0540b/badges,GitHub Foundations
+marisa,,batalla,1,/users/marisa-batalla/badges,GitHub Foundations
+Steven,,chacon,1,/users/steven-chacon.6dba540f/badges,GitHub Foundations
+Viviana María,,Álvarez Solano,1,/users/viviana-maria-alvarez-solano/badges,GitHub Foundations
+Nestor,,Reveron,107,/users/nestor-reveron/badges,"AZ-300 Microsoft Azure Architect Technologies|AZ-301 Microsoft Azure Architect Design|AZ-303: Microsoft Azure Architect Technologies|AZ-304: Microsoft Azure Architect Design|AZ-305: Designing Microsoft Azure Infrastructure Solutions|AZ-400: Designing and Implementing Microsoft DevOps Solutions|AZ-800: Administering Windows Server Hybrid Core Infrastructure|AZ-801: Configuring Windows Server Hybrid Advanced Services|Accessibility in Action|Copilot for M365 Achiever Badge - Foundational|Copilot for Microsoft 365 Security Champion —​ FY24 Participant|Copilot for Microsoft 365 Technical Champion|Copilot for Security | Sales Skills Achiever Badge|Copilot for Security | Technical Skills Achiever Badge|Customer Facing Skills Initiative: Strategic Communication|DP-200 Implementing an Azure Data Solution|DP-201 Designing an Azure Data Solution|Defender for Cloud Black Belt|Evangelist - Azure Architecture Center|Event Speaker Silver|Exam 246: Monitoring and Operating a Private Cloud with System Center 2012|Exam 247: Configuring and Deploying a Private Cloud with System Center 2012|Exam 331: Core Solutions of Microsoft SharePoint Server 2013|Exam 346: Managing Office 365 Identities and Requirements|Exam 347: Enabling Office 365 Services|Exam 410: Installing and Configuring Windows Server 2012|Exam 411: Administering Windows Server 2012|Exam 412: Configuring Advanced Windows Server 2012 Services|Exam 413: Designing and Implementing a Server Infrastructure|Exam 414: Implementing an Advanced Server Infrastructure|Exam 532: Developing Microsoft Azure Solutions|Exam 533: Implementing Microsoft Azure Infrastructure Solutions|Exam 534: Architecting Microsoft Azure Solutions|Exam 743: Upgrading Your Skills to MCSA: Windows Server 2016|External User Group Silver|GitHub Actions|GitHub Administration|GitHub Advanced Security|L1 Cloud Security Product Champion|L2 Cloud Security Product Influencer|L3 Defender for Cloud Influencer|MCSA: Cloud Platform - Certified 2016|MCSA: Office 365 - Certified 2017|MCSA: Windows Server 2012 - Certified 2016|MCSA: Windows Server 2016 - Certified 2016|MCSE: Cloud Platform and Infrastructure — Certified 2016|MCSE: Productivity — Certified 2016|MCSE: Productivity — Certified 2017|MS-100: Microsoft 365 Identity and Services|MS-101: Microsoft 365 Mobility and Security|Mentor Silver|Microsoft 365 Certified: Enterprise Administrator Expert|Microsoft 365 Certified: Fundamentals|Microsoft 365 Certified: Security Administrator Associate*|Microsoft 365 Certified: Teams Administrator Associate|Microsoft 365 Copilot AI Navigator Badge|Microsoft Certified Trainer 2017-2018|Microsoft Certified Trainer 2018-2019|Microsoft Certified Trainer 2019-2020|Microsoft Certified Trainer 2020-2021|Microsoft Certified Trainer 2021-2022|Microsoft Certified Trainer 2022-2023|Microsoft Certified Trainer 2023-2024|Microsoft Certified: Azure AI Engineer Associate|Microsoft Certified: Azure AI Fundamentals|Microsoft Certified: Azure Administrator Associate|Microsoft Certified: Azure Administrator Associate (Legacy)|Microsoft Certified: Azure Cosmos DB Developer Specialty|Microsoft Certified: Azure Data Engineer Associate|Microsoft Certified: Azure Data Fundamentals|Microsoft Certified: Azure Database Administrator Associate|Microsoft Certified: Azure Developer Associate|Microsoft Certified: Azure Developer Associate (Legacy)|Microsoft Certified: Azure Fundamentals|Microsoft Certified: Azure Network Engineer Associate|Microsoft Certified: Azure Security Engineer Associate|Microsoft Certified: Azure Solutions Architect Expert|Microsoft Certified: Azure Solutions Architect Expert (Legacy)*|Microsoft Certified: Azure Stack Hub Operator Associate|Microsoft Certified: Azure Virtual Desktop Specialty|Microsoft Certified: Azure for SAP Workloads Specialty|Microsoft Certified: Cybersecurity Architect Expert|Microsoft Certified: DevOps Engineer Expert|Microsoft Certified: Identity and Access Administrator Associate|Microsoft Certified: Information Protection Administrator Associate|Microsoft Certified: Information Security Administrator Associate|Microsoft Certified: Security Operations Analyst Associate|Microsoft Certified: Security, Compliance, and Identity Fundamentals|Microsoft Certified: Windows Server Hybrid Administrator Associate|Microsoft Global Challenger|Microsoft Global Hackathon 2022|Microsoft Global Hackathon 2024|Microsoft Global Hackathon 2025|Microsoft SkillUp AI|Migrating Microsoft Workloads to Azure Coach|OpenHack: App Modernization with NoSQL|OpenHack: App Modernization with NoSQL Tech Lead|OpenHack: Cloud-based Data Warehousing Coach|OpenHack: Containers|OpenHack: Containers Coach|OpenHack: Containers Tech Lead|OpenHack: Migrating Microsoft Workloads to Azure|OpenHack: Migrating Microsoft Workloads to Azure Tech Lead|OpenHack: Security, Compliance, and Identity|OpenHack: Security, Compliance, and Identity Coach|OpenHack: Security, Compliance, and Identity Tech Lead|SC-100: Microsoft Cybersecurity Architect"

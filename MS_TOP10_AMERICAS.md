@@ -1,21 +1,21 @@
 # 🗽 TOP 10 Microsoft Certifications - Americas
 
-> Last updated: April 03, 2026 at 23:31 UTC
+> Last updated: April 04, 2026 at 11:42 UTC
 
 ## 🏆 Top 10 Microsoft Certifications Leaders
 
 | Rank | Name | Badges | Company | Country |
 |------|------|--------|---------|---------|
-| 🥇 #1 | [Nestor Reveron](https://www.credly.com/users/nestor-reveron/badges) | 47 | Cloud | Costa Rica |
-| 🥈 #2 | [Diego Giglioli](https://www.credly.com/users/diego-giglioli/badges) | 33 | Avanade | Brazil |
-| 🥉 #3 | [Inaldo Lopes Lopes](https://www.credly.com/users/inaldo-lopes/badges) | 32 |  | Brazil |
-| #4 | [Beatriz Matsui](https://www.credly.com/users/beatriz-matsui/badges)<br>[Jean-François Bilodeau](https://www.credly.com/users/jfbilodeau/badges)<br>[Luis Antonio Beltran Prieto](https://www.credly.com/users/luis-antonio-beltran-prieto/badges) | 29 | Microsoft<br>Microsoft<br> | Brazil<br>Canada<br>Mexico |
-| #5 | [Ahmad El Nakib](https://www.credly.com/users/ahmad-el-nakib/badges)<br>[Angeles Banaka](https://www.credly.com/users/angeles-banaka/badges)<br>[Fabricio Assumpção](https://www.credly.com/users/fabricio-assumpcao.5e1ecfa4/badges) | 25 | Microsoft<br><br> | Canada<br>Canada<br>Brazil |
-| #6 | [Senthuran Sivananthan](https://www.credly.com/users/senthuran/badges) | 23 |  | Canada |
-| #7 | [Andre Dias](https://www.credly.com/users/andredias/badges) | 22 | Avanade | Brazil |
-| #8 | [Adin Ermie](https://www.credly.com/users/adinermie/badges) | 19 | Independent Consultant | Canada |
-| #9 | [Rafael Barros](https://www.credly.com/users/rbarros/badges) | 18 | Avanade | Brazil |
-| #10 | [Deivid De Foggi](https://www.credly.com/users/deivid-de-foggi/badges)<br>[Filipe Duarte](https://www.credly.com/users/filipe-duarte.3c29541f/badges) | 17 | Microsoft<br> | Brazil<br>Brazil |
+| 🥇 #1 | [Nestor Reveron](https://www.credly.com/users/nestor-reveron/badges) | 105 | Cloud | Costa Rica |
+| 🥈 #2 | [Marco Prado](https://www.credly.com/users/marcoprado/badges) | 40 | Microsoft | Costa Rica |
+| 🥉 #3 | [Diego Giglioli](https://www.credly.com/users/diego-giglioli.bb64eaa5/badges) | 36 | Avanade | Brazil |
+| #4 | [Inaldo Lopes Lopes](https://www.credly.com/users/inaldo-lopes/badges) | 31 |  | Brazil |
+| #5 | [Andre Dias](https://www.credly.com/users/andredias/badges)<br>[Beatriz Matsui](https://www.credly.com/users/beatriz-matsui/badges) | 27 | Avanade<br>Microsoft | Brazil<br>Brazil |
+| #6 | [Fabricio Assumpção](https://www.credly.com/users/fabricio-assumpcao.5e1ecfa4/badges) | 24 |  | Brazil |
+| #7 | [Rafael Barros](https://www.credly.com/users/rbarros/badges) | 18 | Avanade | Brazil |
+| #8 | [Deivid De Foggi](https://www.credly.com/users/deivid-de-foggi/badges) | 17 | Microsoft | Brazil |
+| #9 | [Filipe Duarte](https://www.credly.com/users/filipe-duarte.3c29541f/badges) | 16 |  | Brazil |
+| #10 | [Yan Borowski Machado](https://www.credly.com/users/yan-borowski-machado/badges) | 14 | Avanade | Brazil |
 
 ---
 
@@ -23,19 +23,18 @@
 
 | Rank | Company | Total Badges | Certified Users |
 |------|---------|--------------|-----------------|
-| 🥇 #1 | Microsoft | 100 | 4 |
-| 🥈 #2 | Avanade | 73 | 3 |
-| 🥉 #3 | Cloud | 47 | 1 |
-| #4 | Independent Consultant | 19 | 1 |
+| 🥇 #1 | Cloud | 105 | 1 |
+| 🥈 #2 | Avanade | 95 | 4 |
+| 🥉 #3 | Microsoft | 84 | 3 |
 
 ---
 
 ## 📊 Statistics
 
-- **Total Certified Users**: 276
-- **Total Badges Earned**: 1,276
-- **Average Badges per User**: 4.62
-- **Highest Badge Count**: 47
+- **Total Certified Users**: 140
+- **Total Badges Earned**: 662
+- **Average Badges per User**: 4.73
+- **Highest Badge Count**: 105
 
 ---
 

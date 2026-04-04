@@ -16,9 +16,7 @@ from datetime import datetime
 
 # Microsoft issuers on Credly
 MICROSOFT_ISSUER_IDS = {
-    '1392f199-abe0-4698-92b5-834610af6baf', # Microsoft
-    '244bddb0-ca01-406b-a07d-084fb1c3cc68', # Microsoft Power Up Program
-    'e3cf6b4e-7d68-45e5-a9ae-b95d20f7cefd', # Certiport (Pearson VUE)
+    '1392f199-abe0-4698-92b5-834610af6baf', # Microsoft (official - only count this)
 }
 
 EXCLUDED_BADGES = {
@@ -33,14 +31,21 @@ def is_badge_expired(expires_at_date):
     except: return False
 
 def fetch_user_badges(user_id):
-    """Fetch all Microsoft-issued badges for a user, excluding expired ones and duplicates"""
+    """Fetch all unique Microsoft badge names for a user, including the 'Other' tab"""
     unique_badge_names = set()
-    page = 1
     headers = {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
     }
     
     try:
+        # 1. Fetch Profile for synthetic_id (UUID)
+        profile_url = f"https://www.credly.com/users/{user_id}"
+        profile_res = requests.get(profile_url, headers={**headers, 'Accept': 'application/json'}, timeout=10)
+        profile_data = profile_res.json().get('data', {})
+        synthetic_id = profile_data.get('synthetic_id')
+
+        # 2. Fetch Regular Badges
+        page = 1
         while True:
             url = f"https://www.credly.com/users/{user_id}/badges.json?page={page}&per_page=100"
             response = requests.get(url, headers=headers, timeout=10)
@@ -51,31 +56,45 @@ def fetch_user_badges(user_id):
             if not badges: break
             
             for badge in badges:
-                badge_template = badge.get('badge_template', {})
-                name = badge_template.get('name', '')
                 issuer = badge.get('issuer', {})
                 entities = issuer.get('entities', [])
 
-                is_ms = False
-                if any(e.get('entity', {}).get('id') == '1392f199-abe0-4698-92b5-834610af6baf' for e in entities):
-                    is_ms = True
-                    
-                if not is_ms and entities and len(entities) > 0:
-                    issuer_name = entities[0].get('entity', {}).get('name', '')
-                    if issuer_name == 'Microsoft':
-                        is_ms = True
+                is_ms = any(e.get('entity', {}).get('id') in MICROSOFT_ISSUER_IDS for e in entities)
+                if not is_ms:
+                    summary = issuer.get('summary', '')
+                    issuer_msg = ''
+                    if isinstance(summary, dict):
+                        issuer_msg = summary.get('name', '')
+                    else:
+                        issuer_msg = str(summary)
+                    if 'Microsoft' in issuer_msg or 'GitHub' in issuer_msg: is_ms = True
                 
                 if is_ms:
+                    badge_template = badge.get('badge_template', {})
+                    name = badge_template.get('name', '')
                     if name and name not in EXCLUDED_BADGES:
                         unique_badge_names.add(name)
             
             page += 1
             if page > 5: break # Cap pages for performance
             
-        return len(unique_badge_names)
+        # 3. Fetch External Badges (Other tab)
+        if synthetic_id:
+            ext_url = f"https://www.credly.com/api/v1/users/{synthetic_id}/external_badges/open_badges/public?page=1&page_size=100"
+            ext_res = requests.get(ext_url, headers=headers, timeout=10)
+            if ext_res.status_code == 200:
+                ext_data = ext_res.json().get('data', [])
+                for item in ext_data:
+                    ext_badge = item.get('external_badge', {})
+                    issuer_name = ext_badge.get('issuer_name', '')
+                    if 'Microsoft' in issuer_name or 'GitHub' in issuer_name:
+                        badge_name = ext_badge.get('badge_name', '')
+                        if badge_name and badge_name not in EXCLUDED_BADGES:
+                            unique_badge_names.add(badge_name)
+
+        return unique_badge_names
     except Exception as e:
-        # print(f"    ⚠️  Error for {user_id}: {e}")
-        return 0
+        return set()
 
 def fetch_country_data(country):
     """Fetch data for a country using GitHub Org directory as user pool"""
@@ -134,7 +153,7 @@ def fetch_country_data(country):
         top_candidates = all_users_sorted[:min(100, len(all_users_sorted))]
         
         print(f"  Fetching detailed MS badges for top {len(top_candidates)} candidates...")
-        user_badge_counts = {}
+        user_badge_data = {} # Will store set of names
         
         with ThreadPoolExecutor(max_workers=10) as executor:
             future_to_user = {
@@ -143,19 +162,18 @@ def fetch_country_data(country):
             }
             for future in as_completed(future_to_user):
                 user_id = future_to_user[future]
-                try:
-                    badge_count = future.result()
-                    user_badge_counts[user_id] = badge_count
-                except:
-                    user_badge_counts[user_id] = 0
+                try: 
+                    badge_names_set = future.result()
+                except: 
+                    badge_names_set = set()
+                user_badge_data[user_id] = badge_names_set
         
-        # Update badge counts
+        # Update badge counts and names
         for user in all_users:
             user_id = user.get('id')
-            if user_id and user_id in user_badge_counts:
-                user['badge_count'] = user_badge_counts[user_id]
-            else:
-                user['badge_count'] = 0 # Not an MS cert (within this context)
+            badge_names_set = user_badge_data.get(user_id, set())
+            user['badge_count'] = len(badge_names_set)
+            user['badge_names'] = "|".join(sorted(list(badge_names_set)))
     
     return all_users
 
@@ -165,7 +183,7 @@ def save_to_csv(country, users, output_dir='datasource_ms'):
     output_file = f"{output_dir}/ms-certs-{file_suffix}.csv"
     with open(output_file, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
-        writer.writerow(['first_name', 'middle_name', 'last_name', 'badge_count', 'profile_url'])
+        writer.writerow(['first_name', 'middle_name', 'last_name', 'badge_count', 'profile_url', 'badge_names'])
         for user in users:
             if user.get('badge_count', 0) > 0:
                 writer.writerow([
@@ -173,7 +191,8 @@ def save_to_csv(country, users, output_dir='datasource_ms'):
                     user.get('middle_name', ''),
                     user.get('last_name', ''),
                     user.get('badge_count', 0),
-                    user.get('url', '')
+                    user.get('url', ''),
+                    user.get('badge_names', '')
                 ])
     print(f"\nSaved to {output_file}")
     return output_file

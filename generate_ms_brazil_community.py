@@ -36,6 +36,7 @@ def fetch_user_badges_and_company(user_id, profile_url):
     try:
         # Fetch badges
         page = 1
+        synthetic_id = None
         while True:
             url = f"https://www.credly.com/users/{user_id}/badges.json?page={page}&per_page=100"
             res = requests.get(url, headers=headers, timeout=10)
@@ -44,6 +45,11 @@ def fetch_user_badges_and_company(user_id, profile_url):
             badges = data.get('data', [])
             if not badges: break
             
+            # Get synthetic_id for external badges if not already set
+            if not synthetic_id:
+                profile_data = data.get('metadata', {}).get('user', {})
+                synthetic_id = profile_data.get('synthetic_id')
+
             for badge in badges:
                 issuer = badge.get('issuer', {})
                 entities = issuer.get('entities', [])
@@ -65,6 +71,27 @@ def fetch_user_badges_and_company(user_id, profile_url):
             
             page += 1
             if page > 10: break
+
+        # Fetch External Badges (Other tab)
+        if not synthetic_id and profile_url:
+            username = profile_url.split('/')[2] if '/users/' in profile_url else ''
+            if username:
+                try:
+                    p_res = requests.get(f"https://www.credly.com/users/{username}", headers={**headers, 'Accept': 'application/json'}, timeout=5)
+                    synthetic_id = p_res.json().get('data', {}).get('synthetic_id')
+                except: pass
+
+        if synthetic_id:
+            ext_url = f"https://www.credly.com/api/v1/users/{synthetic_id}/external_badges/open_badges/public?page=1&page_size=100"
+            ext_res = requests.get(ext_url, headers=headers, timeout=10)
+            if ext_res.status_code == 200:
+                ext_data = ext_res.json().get('data', [])
+                for item in ext_data:
+                    ext_badge = item.get('external_badge', {})
+                    issuer_name = ext_badge.get('issuer_name', '')
+                    if 'Microsoft' in issuer_name or 'GitHub' in issuer_name:
+                        badge_name = ext_badge.get('badge_name', '')
+                        if badge_name: unique_badge_names.add(badge_name)
             
         # Fetch company
         username = profile_url.split('/')[2] if '/users/' in profile_url else ''
@@ -110,7 +137,7 @@ def main():
         return
 
     print(f"📂 Loading Brazil users from {csv_file}...")
-    final_users = []
+    final_users_raw = []
     try:
         with open(csv_file, 'r', encoding='utf-8') as f:
             reader = csv.DictReader(f)
@@ -118,9 +145,12 @@ def main():
                 badge_count = int(row.get('badge_count', 0))
                 if badge_count > 0:
                     name = ' '.join(filter(None, [row.get('first_name'), row.get('middle_name'), row.get('last_name')]))
-                    final_users.append({
+                    badge_names_str = row.get('badge_names', '')
+                    badge_names_list = [b.strip() for b in badge_names_str.split('|') if b.strip()]
+                    
+                    final_users_raw.append({
                         'name': name,
-                        'badges': badge_count,
+                        'unique_badges': set(badge_names_list),
                         'profile_url': row.get('profile_url'),
                         'company': '' # To be fetched
                     })
@@ -128,16 +158,21 @@ def main():
         print(f"❌ Error: {e}")
         return
 
-    # Name-based grouping in case there are duplicates in CSV (e.g. from manual injections)
+    # Name-based grouping for absolute deduplication across accounts
     grouped_users = {}
-    for u in final_users:
+    for u in final_users_raw:
         name = u['name']
         if name not in grouped_users:
             grouped_users[name] = u
         else:
-            grouped_users[name]['badges'] += u['badges']
+            # Union of unique badge names
+            grouped_users[name]['unique_badges'].update(u['unique_badges'])
             if not grouped_users[name]['profile_url'] and u['profile_url']:
                 grouped_users[name]['profile_url'] = u['profile_url']
+
+    # Finalize counts
+    for u in grouped_users.values():
+        u['badges'] = len(u['unique_badges'])
 
     sorted_users = sorted(grouped_users.values(), key=lambda x: (-x['badges'], x['name'].lower()))
     

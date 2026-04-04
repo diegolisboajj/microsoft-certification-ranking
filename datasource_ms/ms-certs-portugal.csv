@@ -1,27 +1,25 @@
-first_name,middle_name,last_name,badge_count,profile_url
-Antonio,,Alves,1,/users/antonio-alves.913f9d40/badges
-Bernardo,,Antunes,2,/users/bernardo-antunes.52dbe73e/badges
-Luis,,Arnauth,31,/users/luisarnauth/badges
-Caroline,,Assucena,5,/users/caroline-assucena/badges
-Joao,,Barroso,1,/users/joao-barroso.ff015ea6/badges
-Ruben,,Batista,13,/users/rubenba/badges
-Tiago,,Bernardo,12,/users/tiago-bernardo.555539d3/badges
-João,,Cabete,1,/users/joao-cabete.f1c9b8e6/badges
-David,,Canavezes,1,/users/david-canavezes/badges
-Pedro,,Cantante,1,/users/pedro-cantante/badges
-Ivo,,Cosme,3,/users/ivo-cosme/badges
-Marcelo,,Costa,4,/users/marcelotpcosta/badges
-Tiago,,Costa,49,/users/tiago-costa.b6e7633a/badges
-Mário,,Dagot,4,/users/mario-dagot.80fded99/badges
-Marcos Vinicius,Oliveira,Dias,5,/users/marcos-vinicius-oliveira-dias/badges
-Eduardo,,Faria,1,/users/eduardo-faria.4bbadcc2/badges
-Cláudio,,Gomes,1,/users/claudio-gomes.47ff32a9/badges
-Henrique,,Graca,8,/users/hjgraca/badges
-Dario,,Lima,3,/users/dario-lima.8127a185/badges
-Vinicius,,Nava,7,/users/vinicius-santos.e7816d61/badges
-Nelson,,Nobre,2,/users/nelson-nobre/badges
-Miguel,,Nunes,1,/users/miguel-nunes.bca62b41/badges
-Miguel,,Simao,3,/users/miguel-simao.07c349ae/badges
-João,,Simões,2,/users/joao-simoes.1a7beb06/badges
-João,,Tomázio,4,/users/joao-tomazio/badges
-Daniel,,Vaz,3,/users/daniel-vaz/badges
+first_name,middle_name,last_name,badge_count,profile_url,badge_names
+João,,Cabete,2,/users/joao-cabete.f1c9b8e6/badges,Microsoft Certified: Azure Developer Associate|Microsoft Certified: Azure Fundamentals
+David,,Canavezes,2,/users/david-canavezes/badges,Microsoft Certified: Azure Administrator Associate|Microsoft Certified: Azure Fundamentals
+Pedro,,Cantante,1,/users/pedro-cantante/badges,Microsoft Certified: Azure Fundamentals
+Filipe,,Fernandes,1,/users/filipefernandesdev/badges,Microsoft Certified: Azure Fundamentals
+Antonio,,Alves,1,/users/antonio-alves.913f9d40/badges,Microsoft Certified: Azure Fundamentals
+Bernardo,,Antunes,2,/users/bernardo-antunes.52dbe73e/badges,MTA: Windows Server Administration Fundamentals - Certified 2020|Microsoft Certified: Azure Fundamentals
+Marta,,Santos,11,/users/marta-asantos/badges,"GitHub Copilot|Microsoft 365 Certified: Fundamentals|Microsoft Certified: Azure AI Engineer Associate|Microsoft Certified: Azure AI Fundamentals|Microsoft Certified: Azure Data Engineer Associate|Microsoft Certified: Azure Data Fundamentals|Microsoft Certified: Azure Data Scientist Associate|Microsoft Certified: Azure Fundamentals|Microsoft Certified: Power BI Data Analyst Associate|Microsoft Certified: Power Platform Fundamentals|Microsoft Certified: Security, Compliance, and Identity Fundamentals"
+Madelina,,Sibumbe,4,/users/madelina-sibumbe/badges,Microsoft Certified: Azure AI Fundamentals|Microsoft Certified: Azure Administrator Associate|Microsoft Certified: Azure Data Fundamentals|Microsoft Certified: Azure Fundamentals
+Sérgio,,Miranda,3,/users/sergiomiranda/badges,"Microsoft Certified: Azure AI Fundamentals|Microsoft Certified: Azure Fundamentals|Microsoft Certified: Security, Compliance, and Identity Fundamentals"
+Vinicius,,Nava,15,/users/vinicius-santos.e7816d61/badges,AZ-300 Microsoft Azure Architect Technologies|AZ-301 Microsoft Azure Architect Design|AZ-400: Designing and Implementing Microsoft DevOps Solutions|Microsoft Certified Trainer 2020-2021|Microsoft Certified Trainer 2021-2022|Microsoft Certified Trainer 2022-2023|Microsoft Certified: Azure Administrator Associate|Microsoft Certified: Azure Administrator Associate (Legacy)|Microsoft Certified: Azure Fundamentals|Microsoft Certified: Azure Network Engineer Associate|Microsoft Certified: Azure Security Engineer Associate|Microsoft Certified: Azure Solutions Architect Expert|Microsoft Certified: Azure Solutions Architect Expert (Legacy)*|Microsoft Certified: Azure Virtual Desktop Specialty|Microsoft Certified: DevOps Engineer Expert
+Cláudio,,Gomes,1,/users/claudio-gomes.47ff32a9/badges,Microsoft Certified: Azure Fundamentals
+Nelson,,Nobre,2,/users/nelson-nobre/badges,AZ-400: Designing and Implementing Microsoft DevOps Solutions|Microsoft Certified: Azure Fundamentals
+Miguel,,Nunes,1,/users/miguel-nunes.bca62b41/badges,Microsoft Certified: Azure Fundamentals
+Tiago,,Patrício,1,/users/tiago-patricio.7a59a6ff/badges,Microsoft Certified: Azure Fundamentals
+Gonçalo,,Silva,1,/users/goncalo-silva.84c82f6a/badges,Microsoft Certified: Azure Fundamentals
+Miguel,,Simao,9,/users/miguel-simao.07c349ae/badges,AZ-305: Designing Microsoft Azure Infrastructure Solutions|AZ-400: Designing and Implementing Microsoft DevOps Solutions|Microsoft Certified: Azure Administrator Associate|Microsoft Certified: Azure Developer Associate|Microsoft Certified: Azure Fundamentals|Microsoft Certified: Azure IoT Developer Specialty|Microsoft Certified: Azure Security Engineer Associate|Microsoft Certified: Azure Solutions Architect Expert|Microsoft Certified: DevOps Engineer Expert
+Ruben,,Batista,13,/users/rubenba/badges,"BDM Conversations and Storytelling in the Age of Digital Transformation|Exam 533: Implementing Microsoft Azure Infrastructure Solutions|Exam 535: Architecting Microsoft Azure Solutions|MCSA: Cloud Platform - Certified 2018|Microsoft 365 Certified: Fundamentals|Microsoft Certified: Azure Data Fundamentals|Microsoft Certified: Azure Fundamentals|Microsoft Certified: Power Platform Fundamentals|Microsoft Certified: Security, Compliance, and Identity Fundamentals|Microsoft Global Challenger|Microsoft-INSEAD Value Negotiation|Modern Marketer: Business & Marketing Strategy|Story Impact: Learning to Connect and Compel"
+Tiago,,Bernardo,18,/users/tiago-bernardo.555539d3/badges,AZ-300 Microsoft Azure Architect Technologies|AZ-301 Microsoft Azure Architect Design|AZ-400: Designing and Implementing Microsoft DevOps Solutions|Microsoft 365 Certified: Fundamentals|Microsoft Certified Trainer 2019-2020|Microsoft Certified Trainer 2020-2021|Microsoft Certified Trainer 2021-2022|Microsoft Certified Trainer 2022-2023|Microsoft Certified: Azure AI Fundamentals|Microsoft Certified: Azure Administrator Associate|Microsoft Certified: Azure Data Fundamentals|Microsoft Certified: Azure Developer Associate|Microsoft Certified: Azure Developer Associate (Legacy)|Microsoft Certified: Azure Fundamentals|Microsoft Certified: Azure Solutions Architect Expert|Microsoft Certified: Azure Solutions Architect Expert (Legacy)*|Microsoft Certified: DevOps Engineer Expert|Microsoft Certified: Power Platform Fundamentals
+João,,Simões,4,/users/joao-simoes.1a7beb06/badges,AZ-400: Designing and Implementing Microsoft DevOps Solutions|Microsoft Certified: Azure Administrator Associate|Microsoft Certified: Azure Fundamentals|Microsoft Certified: DevOps Engineer Expert
+Mateus,,Lenhart,2,/users/mateus-lenhart/badges,Conceitos básicos do GitHub Copilot parte 1 de 2|GitHub Copilot
+Dario,,Lima,5,/users/dario-lima.8127a185/badges,AZ-300 Microsoft Azure Architect Technologies|AZ-301 Microsoft Azure Architect Design|Microsoft Certified: Azure Fundamentals|Microsoft Certified: Azure Solutions Architect Expert|Microsoft Certified: Azure Solutions Architect Expert (Legacy)*
+Joao,,Barroso,1,/users/joao-barroso.ff015ea6/badges,Microsoft Certified: Azure Fundamentals
+João,,Tomázio,11,/users/joao-tomazio/badges,AZ-303: Microsoft Azure Architect Technologies|AZ-304: Microsoft Azure Architect Design|AZ-400: Designing and Implementing Microsoft DevOps Solutions|Microsoft Certified: Azure Administrator Associate|Microsoft Certified: Azure Administrator Associate (Legacy)|Microsoft Certified: Azure Fundamentals|Microsoft Certified: Azure Network Engineer Associate|Microsoft Certified: Azure Security Engineer Associate|Microsoft Certified: Azure Solutions Architect Expert|Microsoft Certified: DevOps Engineer Expert|Microsoft Certified: Security Operations Analyst Associate
+Daniel,,Vaz,6,/users/daniel-vaz/badges,AZ-305: Designing Microsoft Azure Infrastructure Solutions|AZ-400: Designing and Implementing Microsoft DevOps Solutions|Microsoft Certified: Azure Administrator Associate|Microsoft Certified: Azure Fundamentals|Microsoft Certified: Azure Solutions Architect Expert|Microsoft Certified: DevOps Engineer Expert

@@ -121,6 +121,33 @@ def load_metadata():
             return json.load(f)
     return {}
 
+import re
+
+def normalize_badge_name(name):
+    """Normalize badge name for strict deduplication"""
+    if not name: return ""
+    # 1. Handle all whitespace variants (non-breaking spaces, etc)
+    name = re.sub(r'\s+', ' ', name).strip()
+    # 2. Remove common prefixes like 'AZ-900:', 'Exam AZ-900:', etc.
+    # Pattern looks for Alphanumeric-Alphanumeric: at the start
+    # Also strip known prefixes like 'Microsoft Certified: ', 'Microsoft Applied Skills: '
+    # so that 'Exam AZ-900: Azure Fundamentals' and 'Azure Fundamentals' merge.
+    name = re.sub(r'^(Exam\s+)?([A-Z0-9]+\-[A-Z0-9]+\:\s*)', '', name, flags=re.IGNORECASE)
+    name = re.sub(r'^(Microsoft\s+(Certified|Applied Skills)\:\s*)', '', name, flags=re.IGNORECASE)
+    # 3. Strip exam codes in parentheses anywhere: (AZ-900)
+    name = re.sub(r'\s*\([A-Z0-9]+\-[A-Z0-9]+\)\s*', '', name, flags=re.IGNORECASE)
+    # 4. Aggressive cleanup: only alphanumeric and spaces
+    name = re.sub(r'[^\w\s]', '', name)
+    # 5. Standardize spaces and case
+    name = re.sub(r'\s+', ' ', name).strip().lower()
+    # 6. Remove 'legacy' or versioning suffixes
+    name = name.replace('legacy', '').strip()
+    return name
+
+# NOTE: CERT_PATTERNS filtering removed - the CSV already only contains MS-validated badges
+# (validated at fetch time by MICROSOFT_ISSUER_IDS). We count ALL badges in the CSV.
+# Deduplication is done by normalizing badge names and using a set (raw_badges_map).
+
 def read_all_csv_files(base_path):
     grouped_users = {}
     csv_files = glob.glob(os.path.join(base_path, 'datasource_ms', 'ms-certs-*.csv'))
@@ -140,8 +167,8 @@ def read_all_csv_files(base_path):
             with open(csv_file, 'r', encoding='utf-8') as f:
                 reader = csv.DictReader(f)
                 for row in reader:
-                    badge_count = int(row.get('badge_count', 0))
-                    if badge_count > 0:
+                    badge_count_val = int(row.get('badge_count', 0))
+                    if badge_count_val > 0:
                         first_name = row.get('first_name', '').strip('"').strip()
                         middle_name = row.get('middle_name', '').strip('"').strip()
                         last_name = row.get('last_name', '').strip('"').strip()
@@ -149,28 +176,45 @@ def read_all_csv_files(base_path):
                         
                         full_name = ' '.join(filter(None, [first_name, middle_name, last_name]))
                         if not full_name: continue
-
+                        
+                        # Parse individual badge names
+                        badge_names_str = row.get('badge_names', '')
+                        # Normalizing each badge name for the set comparison
+                        new_badges_raw = [b.strip() for b in badge_names_str.split('|') if b.strip()]
+                        
                         if full_name not in grouped_users:
                             grouped_users[full_name] = {
                                 'name': full_name,
-                                'badges': badge_count,
+                                'raw_badges_map': {}, # Map normalized_name -> original_name
                                 'country': country_display,
                                 'continent': continent,
                                 'profile_url': profile_url
                             }
-                        else:
-                            # Sum badges for existing user
-                            grouped_users[full_name]['badges'] += badge_count
-                            # Prefer non-empty profile URL if current is empty
-                            if not grouped_users[full_name]['profile_url'] and profile_url:
-                                grouped_users[full_name]['profile_url'] = profile_url
-
+                        
+                        target_user = grouped_users[full_name]
+                        for b in new_badges_raw:
+                            norm_b = normalize_badge_name(b)
+                            if norm_b:
+                                if norm_b not in target_user['raw_badges_map']:
+                                    target_user['raw_badges_map'][norm_b] = b
+                        
+                        # Prefer non-empty profile URL
+                        if not target_user['profile_url'] and profile_url:
+                            target_user['profile_url'] = profile_url
         except Exception as e:
             print(f"⚠️  Error processing {csv_file}: {e}")
             
-    users = list(grouped_users.values())
-    print(f"✅ Loaded {len(users)} unique users from all files")
-    return users
+    # Finalize badge counts
+    users_list = []
+    for user in grouped_users.values():
+        user['badges'] = len(user['raw_badges_map'])
+        if 'Giglioli' in user['name'] or 'Alonso Portillo' in user['name']:
+            print(f"DEBUG: {user['name']} has {user['badges']} unique certifications after normalization.")
+        if user['badges'] > 0:
+            users_list.append(user)
+            
+    print(f"✅ Loaded {len(users_list)} unique users with valid certifications")
+    return users_list
 
 def generate_markdown_top10(users, title, filename, filter_func=None):
     if filter_func:

@@ -1,23 +1,101 @@
-first_name,middle_name,last_name,badge_count,profile_url
-Igor,,Aleksandrov,1,/users/igor-aleksandrov.dea0afe4/badges
-Vladislav,,Antonyuk,2,/users/vladislav-antonyuk/badges
-Ivan,,Berezhnyk,1,/users/ivan-berezhnyk/badges
-Nazar,,Bezuhlyi,2,/users/nazar-bezuhlyi/badges
-ANDRII,,CHERNYSHOV,1,/users/andrii-chernyshov/badges
-Dmytro,,Doroshenko,42,/users/dmytro-doroshenko/badges
-Denys,,Doskakch,1,/users/denys-doskakch/badges
-Artem,,Epishov,1,/users/artem-epishov/badges
-Dmytro,,Fesyk,1,/users/dmytro-fesyk/badges
-Yurii,,Hasko,1,/users/yurii-hasko/badges
-Viktor,,Ishchenko,1,/users/viktor-ishchenko/badges
-Serhii,,Konovalenko,1,/users/serhii-konovalenko/badges
-Borzenko,,Olena,1,/users/borzenko-olena/badges
-Nataliia,,Pakhol,1,/users/nataliia-pakhol/badges
-Serhii,Sergeyevich,Plesovskykh,1,/users/serhii-plesovskykh/badges
-Mykyta,,Potapenko,1,/users/mykyta-potapenko/badges
-Andrii,,Pryymak,17,/users/andrei-pryymak/badges
-Bohdan,,Rudenko,1,/users/bohdan-rudenko/badges
-Dmytro,,Shtepura,1,/users/dmytro-shtepura/badges
-Olena,,Stoliarova,2,/users/olena-stoliarova/badges
-Mykhailo,,T,1,/users/mykhailot/badges
-Volodymyr,,Tretiak,1,/users/volodymyr-tretiak/badges
+first_name,middle_name,last_name,badge_count,profile_url,badge_names
+PENTSAK,,ANDRII,1,/users/pentsak-andrii/badges,GitHub Actions
+Igor,,Aleksandrov,4,/users/igor-aleksandrov.dea0afe4/badges,AZ-400: Designing and Implementing Microsoft DevOps Solutions|GitHub Advanced Security|Microsoft Certified: Azure Administrator Associate|Microsoft Certified: DevOps Engineer Expert
+Nazar,,Antoniuk,1,/users/niusia/badges,GitHub Foundations
+Vladislav,,Antonyuk,6,/users/vladislav-antonyuk/badges,2023 Microsoft Most Valuable Professional (MVP)|2025 Microsoft Most Valuable Professional (MVP)|Exam 483: Programming in C#|GitHub Foundations|Hack Together: The Great .NET 8 Hack Finisher|Microsoft Certified: Azure Fundamentals
+Tetiana,,Ashri,1,/users/tetiana-ashri/badges,GitHub Foundations
+Ivan,,Babai,1,/users/ivan-babai/badges,GitHub Actions
+Dmytro,,Babich,1,/users/dmytro-babich/badges,GitHub Actions
+Kateryna,,Bartienieva,1,/users/kateryna-bartienieva/badges,GitHub Foundations
+Yurii,,Belichenko,1,/users/ybeliche/badges,GitHub Actions
+Ivan,,Berezhnyk,2,/users/ivan-berezhnyk/badges,Exam 480: Programming in HTML5 with JavaScript and CSS3|GitHub Copilot
+Oksana,,Berezhnyk,1,/users/oksana-berezhnyk.aa666c6d/badges,GitHub Copilot
+Nazar,,Bezuhlyi,3,/users/nazar-bezuhlyi/badges,GitHub Foundations|Microsoft Certified: Azure Data Fundamentals|Microsoft Certified: Azure Fundamentals
+Roman,,Bobrovskyi,1,/users/username.318d300e/badges,GitHub Actions
+Sergey,,Bobryka,1,/users/sergey-bobryka/badges,GitHub Actions
+Yaroslav,,Bohak,1,/users/yaroslav-bohak/badges,GitHub Copilot
+Volodymyr,,Budnyi,1,/users/volodymyr-budnyi.da746178/badges,GitHub Copilot
+ANDRII,,CHERNYSHOV,4,/users/andrii-chernyshov/badges,Exam 480: Programming in HTML5 with JavaScript and CSS3|GitHub Copilot|Microsoft Certified: Azure AI Fundamentals|Microsoft Certified: Azure Developer Associate
+Dmytro,,Cheholia,1,/users/dmytro-cheholia/badges,GitHub Actions
+Kyrylo,,Chernousov,1,/users/kyrylo-chernousov/badges,GitHub Foundations
+Denys,,Chesanovskyi,1,/users/chesanovskiydv/badges,GitHub Actions
+Viktoriia,,Demnyk,1,/users/viktoriia-demnyk/badges,GitHub Copilot
+Ihor,,Denyskov,1,/users/ihor-denyskov/badges,GitHub Foundations
+Andrii,,Deren,1,/users/andrii-deren/badges,GitHub Copilot
+Oleksandr,,Diamantopulo,1,/users/oleksandr-diamantopulo/badges,GitHub Actions
+Anatolii,,Divenko,1,/users/anatolii-divenko/badges,GitHub Foundations
+Dmytro,,Doroshenko,62,/users/dmytro-doroshenko/badges,AZ-100 Microsoft Azure Infrastructure and Deployment|AZ-304: Microsoft Azure Architect Design|AZ-400: Designing and Implementing Microsoft DevOps Solutions|DP-200 Implementing an Azure Data Solution|DP-201 Designing an Azure Data Solution|Exam 473: Designing and Implementing Cloud Data Platform Solutions|Exam 475: Designing and Implementing Big Data Analytics Solutions|Exam 480: Programming in HTML5 with JavaScript and CSS3|Exam 483: Programming in C#|Exam 486: Developing ASP.NET MVC Web Applications|Exam 487: Developing Microsoft Azure and Web Services|Exam 497: Software Testing with Visual Studio|Exam 498: Delivering Continuous Value with Visual Studio Application Lifecycle Management|Exam 532: Developing Microsoft Azure Solutions|Exam 533: Implementing Microsoft Azure Infrastructure Solutions|Exam 535: Architecting Microsoft Azure Solutions|Exam 761: Querying Data with Transact-SQL|Exam 762: Developing SQL Databases|Exam 764: Administering a Microsoft SQL Database Infrastructure|Exam 765: Provisioning SQL Databases|Exam 777: Implementing Microsoft Azure Cosmos DB Solutions|GitHub Actions|GitHub Administration|GitHub Advanced Security|GitHub Foundations|MCSA: Cloud Platform - Certified 2018|MCSA: SQL 2016 Database Administration - Certified 2019|MCSA: SQL 2016 Database Development - Certified 2018|MCSA: Web Applications - Certified 2018|MCSD: App Builder — Certified 2018|MCSE: Cloud Platform and Infrastructure — Certified 2018|MCSE: Data Management and Analytics — Certified 2018|MCSE: Data Management and Analytics — Certified 2019|MD-100: Windows Client|MD-101: Managing Modern Desktops|MS-100: Microsoft 365 Identity and Services|MS-101: Microsoft 365 Mobility and Security|MS-200 Planning and Configuring a Messaging Platform|MS-201 Implementing a Hybrid and Secure Messaging Platform|MS-300 Deploying Microsoft 365 Teamwork|Microsoft 365 Certified: Enterprise Administrator Expert|Microsoft 365 Certified: Messaging Administrator Associate|Microsoft 365 Certified: Modern Desktop Administrator Associate|Microsoft 365 Certified: Teamwork Administrator Associate|Microsoft Certified: Azure AI Engineer Associate|Microsoft Certified: Azure AI Fundamentals|Microsoft Certified: Azure Administrator Associate|Microsoft Certified: Azure Administrator Associate (Legacy)|Microsoft Certified: Azure Cosmos DB Developer Specialty|Microsoft Certified: Azure Data Engineer Associate|Microsoft Certified: Azure Data Fundamentals|Microsoft Certified: Azure Database Administrator Associate|Microsoft Certified: Azure Developer Associate|Microsoft Certified: Azure Developer Associate (Legacy)|Microsoft Certified: Azure Fundamentals|Microsoft Certified: Azure Security Engineer Associate|Microsoft Certified: Azure Solutions Architect Expert|Microsoft Certified: Azure Solutions Architect Expert (Legacy)*|Microsoft Certified: DevOps Engineer Expert|Microsoft Certified: Dynamics 365 Fundamentals|Microsoft Certified: Power Platform App Maker Associate|Microsoft Certified: Power Platform Fundamentals
+Denys,,Doskakch,2,/users/denys-doskakch/badges,Exam 483: Programming in C#|GitHub Copilot
+Oleksandr,,Dumynskyi,1,/users/oleksandr-dumynskyi/badges,GitHub Foundations
+Ostap,,Elyashevskyy,1,/users/ostap-elyashevskyy/badges,GitHub Copilot
+Artem,,Epishov,8,/users/artem-epishov/badges,AZ-400: Designing and Implementing Microsoft DevOps Solutions|GitHub Actions|GitHub Administration|GitHub Advanced Security|GitHub Foundations|Microsoft Certified: Azure Administrator Associate|Microsoft Certified: Azure IoT Developer Specialty|Microsoft Certified: DevOps Engineer Expert
+Dmytro,,Fesyk,3,/users/dmytro-fesyk/badges,GitHub Actions|GitHub Copilot|Microsoft Certified: Azure Fundamentals
+Ivan,,Haienko,1,/users/ivan-haienko.4ae61d97/badges,GitHub Actions
+Yurii,,Hasko,5,/users/yurii-hasko/badges,GitHub Actions|GitHub Administration|GitHub Advanced Security|GitHub Foundations|Microsoft Certified: Azure AI Fundamentals
+Yurii,,Hryshchenko,1,/users/yurii-hryshchenko.1e0f7e48/badges,GitHub Foundations
+Taras,,Ishchak,1,/users/taras-ishchak.e9fa72d0/badges,GitHub Foundations
+Viktor,,Ishchenko,2,/users/viktor-ishchenko/badges,GitHub Foundations|Microsoft Certified: Azure Fundamentals
+OLENA,,KOROLIUK,1,/users/olena-koroliuk/badges,GitHub Copilot
+Sviatoslav,,Kolesnyk,1,/users/sviatoslav-kolesnyk.37347744/badges,GitHub Advanced Security
+Serhii,,Konovalenko,6,/users/serhii-konovalenko/badges,AZ-400: Designing and Implementing Microsoft DevOps Solutions|GitHub Advanced Security|Microsoft Certified: Azure Administrator Associate|Microsoft Certified: Azure Administrator Associate (Legacy)|Microsoft Certified: Azure Network Engineer Associate|Microsoft Certified: DevOps Engineer Expert
+Stas,,Kozosvyst,1,/users/stas-kozosvyst/badges,GitHub Foundations
+Oleh,,Krasovskyi,1,/users/oleh-krasovskyi/badges,GitHub Foundations
+Oleksandr,,Kravchenko,1,/users/oleksandr-kravchenko.84fd5000/badges,GitHub Actions
+Viktor,,Krechetov,2,/users/viktor-krechetov/badges,GitHub Actions|GitHub Foundations
+Nazarii,,Kurchyk,1,/users/nazarii-kurchyk/badges,GitHub Foundations
+Serhii,,Kyrychenko,1,/users/serhii-kyrychenko/badges,GitHub Actions
+Yevhen,,Lytviak,3,/users/yevhen-lytviak/badges,GitHub Actions|GitHub Advanced Security|GitHub Foundations
+Farhad,,Mammadov,1,/users/farhadsu/badges,GitHub Foundations
+Ivan,,Marchyshyn,1,/users/one-marc/badges,GitHub Foundations
+Maksym,,Martyniak,1,/users/maksym-martyniak.a2874be7/badges,GitHub Actions
+Vladyslav,,Martyshev,1,/users/vlad-martyshev/badges,GitHub Actions
+Nikita,,Mazuran,1,/users/nikita-mazuran/badges,GitHub Foundations
+Anastasiia,,Melnyk,2,/users/anastasiia-melnyk.87ab1228/badges,GitHub Actions|GitHub Foundations
+Vladyslav,,Mikhalskyi,1,/users/vladyslav-mikhalskyi/badges,GitHub Foundations
+Yehor,,Misiats,1,/users/yehor-misiats/badges,GitHub Actions
+Artur,,Mkrtychian,2,/users/artur-mkrtychian/badges,GitHub Actions|GitHub Foundations
+Ivan,,Mospan,1,/users/ivan-mospan/badges,GitHub Actions
+Oleksandr,,Mykytenko,1,/users/oleksandr-mykytenko/badges,GitHub Administration
+Roman,,Myshchyshyn,1,/users/roman-myshchyshyn.c381f2d3/badges,GitHub Copilot
+Dmytro,,Nahornyy,1,/users/dmytro-nahornyy/badges,GitHub Advanced Security
+Volodymyr,,Nikitin,1,/users/volodymyr-nikitin/badges,GitHub Copilot
+Artem,,Novak,2,/users/artem-novak/badges,GitHub Actions|Microsoft Certified: Azure Administrator Associate
+Serhii,,Oberemchuk,1,/users/serhii-oberemchuk/badges,GitHub Foundations
+Borzenko,,Olena,3,/users/borzenko-olena/badges,2023 Microsoft Most Valuable Professional (MVP)|GitHub Foundations|MTA: Software Development Fundamentals - Certified 2018
+Nataliia,,Pakhol,3,/users/nataliia-pakhol/badges,GitHub Actions|GitHub Administration|Microsoft Certified: Azure Fundamentals
+Bohdan,,Pastushenko,1,/users/bohdan-pastushenko.f6f58f71/badges,GitHub Actions
+Denys,,Pavliuk,1,/users/denys-pavliuk/badges,GitHub Foundations
+Maksym,,Perehinets,2,/users/maksym-perehinets/badges,GitHub Actions|GitHub Advanced Security
+Vitalii,,Piatnytskyi,1,/users/vitalii-piatnytskyi/badges,GitHub Copilot
+Serhii,Sergeyevich,Plesovskykh,5,/users/serhii-plesovskykh/badges,GitHub Actions|GitHub Administration|GitHub Copilot|GitHub Foundations|Microsoft Certified: Azure Fundamentals
+Maksim,,Polyvianyi,2,/users/maksim-polyvyaniy/badges,GitHub Administration|GitHub Advanced Security
+Misha,,Popov,1,/users/misha-popov/badges,GitHub Foundations
+Mykyta,,Potapenko,3,/users/mykyta-potapenko/badges,Exam 483: Programming in C#|GitHub Foundations|Microsoft Developer
+Andrii,,Pryymak,21,/users/andrei-pryymak/badges,AZ-305: Designing Microsoft Azure Infrastructure Solutions|AZ-400: Designing and Implementing Microsoft DevOps Solutions|Exam 246: Monitoring and Operating a Private Cloud with System Center 2012|Exam 247: Configuring and Deploying a Private Cloud with System Center 2012|Exam 346: Managing Office 365 Identities and Requirements|Exam 347: Enabling Office 365 Services|Exam 410: Installing and Configuring Windows Server 2012|Exam 411: Administering Windows Server 2012|Exam 533: Implementing Microsoft Azure Infrastructure Solutions|Exam 534: Architecting Microsoft Azure Solutions|Exam 743: Upgrading Your Skills to MCSA: Windows Server 2016|GitHub Advanced Security|MCSA: Cloud Platform - Certified 2016|MCSA: Office 365 - Certified 2016|MCSA: Windows Server 2012 - Certified 2016|MCSA: Windows Server 2016 - Certified 2017|MCSE: Cloud Platform and Infrastructure — Certified 2016|MCSE: Cloud Platform and Infrastructure — Certified 2017|Microsoft Certified: Azure Administrator Associate|Microsoft Certified: Azure Solutions Architect Expert|Microsoft Certified: DevOps Engineer Expert
+Nikita,,Reshetnik,1,/users/nikita-reshetnik/badges,GitHub Copilot
+Andrii,,Roiko,1,/users/andrii-roiko.4e1e40b8/badges,GitHub Foundations
+Bohdan,,Rudenko,3,/users/bohdan-rudenko/badges,AZ-400: Designing and Implementing Microsoft DevOps Solutions|GitHub Actions|GitHub Administration
+Pavlo,,Rudenko,2,/users/pavlo-rudenko/badges,GitHub Foundations|Microsoft Certified: Azure Administrator Associate
+Yaroslav,,Ryzhan,1,/users/yaroslav-ryzhan.03a3b9a9/badges,GitHub Actions
+Oleh,,Safronov,2,/users/oleh-safronov/badges,GitHub Actions|GitHub Foundations
+Serhii,,Serdiuk,2,/users/serhii-serdiuk-dev/badges,GitHub Actions|GitHub Foundations
+Danylo,,Shapovalov,1,/users/danil-shapovalov/badges,GitHub Foundations
+Vadym,,Sharai,1,/users/vadym-sharai/badges,GitHub Foundations
+Vladislav,,Shevchenko,2,/users/vladislav-shevchenko.0d82fa5e/badges,GitHub Actions|Microsoft Certified: Azure AI Engineer Associate
+Dmytro,,Shtepura,2,/users/dmytro-shtepura/badges,GitHub Foundations|Microsoft Certified: Azure Fundamentals
+Bohdan,,Smachylo,1,/users/bohdan-smachylo/badges,GitHub Advanced Security
+Artem,,Stankov,3,/users/artem-stankov/badges,GitHub Actions|Microsoft Certified: Azure AI Fundamentals|Microsoft Certified: Azure Administrator Associate
+Pavel,,Stetsenko,24,/users/pavel-stetsenko/badges,Azure Data Explorer In-A-Day|Completion Onboarding - Fabric|GitHub Foundations|Kusto Detective Agency - Case #1 Badge|Kusto Detective Agency - Case #2 Badge|Kusto Detective Agency - Case #3 Badge|Kusto Detective Agency - Case #4 Badge|Kusto Detective Agency - Onboarding|Kusto Detective Agency Fabric - Case 1|Kusto Detective Agency Fabric - Case 2|Kusto Detective Agency Fabric - Case 3|Kusto Detective Agency Fabric - Completed!|Kusto Detective Agency SANS Holiday Hack 2023 – Onboarding|Microsoft Certified: Azure Administrator Associate|Microsoft Certified: Azure Administrator Associate (Legacy)|Microsoft Certified: Azure Database Administrator Associate|Microsoft Certified: Azure Security Engineer Associate|New Kusto Detective!|New Rank: Kusto Detective I|New Rank: Kusto Detective II|New Rank: Kusto Detective III|New Rank: Kusto Senior Detective II|New Rank: Principal Cyber Detective|New Rank: Senior Kusto Detective
+Olena,,Stoliarova,14,/users/olena-stoliarova/badges,"GitHub Foundations|Kusto Detective Gold Star!|Microsoft Certified: Azure Fundamentals|Microsoft Certified: Security, Compliance, and Identity Fundamentals|New Kusto Detective!|New Rank: Kusto Detective I|New Rank: Kusto Detective II|New Rank: Kusto Detective III|New Rank: Kusto Senior Detective II|New Rank: Senior Detective Agent|New Rank: Senior Kusto Detective|New rank: Principal Detective|New rank: Special Detective Agent|New rank: Special Detective Agent II"
+Andrii,,Stopchenko,1,/users/andrii-stopchenko/badges,GitHub Foundations
+Oleksandr,,Susla,1,/users/oleksandr-susla/badges,GitHub Foundations
+Mykhailo,,T,5,/users/mykhailot/badges,GitHub Actions|GitHub Advanced Security|Microsoft Certified: Azure Administrator Associate|Microsoft Certified: Azure Fundamentals|Microsoft Certified: Azure Security Engineer Associate
+Yevhenii,,Tarasenko,1,/users/eugene-tarasenko/badges,GitHub Actions
+Artem,,Taratynov,1,/users/artem-taratynov/badges,GitHub Copilot
+Vyacheslav,,Tkachik,1,/users/vyacheslav-tkachik/badges,GitHub Foundations
+Anna,,Tolstova,2,/users/anna-tolstova/badges,GitHub Advanced Security|GitHub Foundations
+Mykyta,,Totskyi,1,/users/mykyta-totskyi/badges,GitHub Actions
+Volodymyr,,Tretiak,3,/users/volodymyr-tretiak/badges,GitHub Actions|Microsoft Certified: Azure Fundamentals|Microsoft Certified: Power BI Data Analyst Associate
+Oleksandr,,Tsyhankov,2,/users/oleksandr-tsyhankov/badges,GitHub Actions|Microsoft Certified: Azure AI Fundamentals
+Vladyslav,,Vysochanskyi,2,/users/vladyslav-vysochanskyi.72072c97/badges,GitHub Actions|GitHub Copilot
+Dmytro,,Doroshenko,62,/users/dmytro-doroshenko/badges,AZ-100 Microsoft Azure Infrastructure and Deployment|AZ-304: Microsoft Azure Architect Design|AZ-400: Designing and Implementing Microsoft DevOps Solutions|DP-200 Implementing an Azure Data Solution|DP-201 Designing an Azure Data Solution|Exam 473: Designing and Implementing Cloud Data Platform Solutions|Exam 475: Designing and Implementing Big Data Analytics Solutions|Exam 480: Programming in HTML5 with JavaScript and CSS3|Exam 483: Programming in C#|Exam 486: Developing ASP.NET MVC Web Applications|Exam 487: Developing Microsoft Azure and Web Services|Exam 497: Software Testing with Visual Studio|Exam 498: Delivering Continuous Value with Visual Studio Application Lifecycle Management|Exam 532: Developing Microsoft Azure Solutions|Exam 533: Implementing Microsoft Azure Infrastructure Solutions|Exam 535: Architecting Microsoft Azure Solutions|Exam 761: Querying Data with Transact-SQL|Exam 762: Developing SQL Databases|Exam 764: Administering a Microsoft SQL Database Infrastructure|Exam 765: Provisioning SQL Databases|Exam 777: Implementing Microsoft Azure Cosmos DB Solutions|GitHub Actions|GitHub Administration|GitHub Advanced Security|GitHub Foundations|MCSA: Cloud Platform - Certified 2018|MCSA: SQL 2016 Database Administration - Certified 2019|MCSA: SQL 2016 Database Development - Certified 2018|MCSA: Web Applications - Certified 2018|MCSD: App Builder — Certified 2018|MCSE: Cloud Platform and Infrastructure — Certified 2018|MCSE: Data Management and Analytics — Certified 2018|MCSE: Data Management and Analytics — Certified 2019|MD-100: Windows Client|MD-101: Managing Modern Desktops|MS-100: Microsoft 365 Identity and Services|MS-101: Microsoft 365 Mobility and Security|MS-200 Planning and Configuring a Messaging Platform|MS-201 Implementing a Hybrid and Secure Messaging Platform|MS-300 Deploying Microsoft 365 Teamwork|Microsoft 365 Certified: Enterprise Administrator Expert|Microsoft 365 Certified: Messaging Administrator Associate|Microsoft 365 Certified: Modern Desktop Administrator Associate|Microsoft 365 Certified: Teamwork Administrator Associate|Microsoft Certified: Azure AI Engineer Associate|Microsoft Certified: Azure AI Fundamentals|Microsoft Certified: Azure Administrator Associate|Microsoft Certified: Azure Administrator Associate (Legacy)|Microsoft Certified: Azure Cosmos DB Developer Specialty|Microsoft Certified: Azure Data Engineer Associate|Microsoft Certified: Azure Data Fundamentals|Microsoft Certified: Azure Database Administrator Associate|Microsoft Certified: Azure Developer Associate|Microsoft Certified: Azure Developer Associate (Legacy)|Microsoft Certified: Azure Fundamentals|Microsoft Certified: Azure Security Engineer Associate|Microsoft Certified: Azure Solutions Architect Expert|Microsoft Certified: Azure Solutions Architect Expert (Legacy)*|Microsoft Certified: DevOps Engineer Expert|Microsoft Certified: Dynamics 365 Fundamentals|Microsoft Certified: Power Platform App Maker Associate|Microsoft Certified: Power Platform Fundamentals
