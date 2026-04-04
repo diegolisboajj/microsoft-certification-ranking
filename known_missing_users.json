@@ -10,5 +10,96 @@
       "first_name": "Diego",
       "last_name": "Giglioli"
     }
+  ],
+  "Spain": [
+    {
+      "id": "ignacio-alonso-portillo",
+      "first_name": "Ignacio",
+      "last_name": "Alonso Portillo"
+    }
+  ],
+  "Poland": [
+    {
+      "id": "pawel-lakomski",
+      "first_name": "Pawel",
+      "last_name": "Lakomski"
+    }
+  ],
+  "Portugal": [
+    {
+      "id": "tiago-costa",
+      "first_name": "Tiago",
+      "last_name": "Costa"
+    }
+  ],
+  "France": [
+    {
+      "id": "jean-benoit-paux",
+      "first_name": "Jean-Benoit",
+      "last_name": "Paux"
+    }
+  ],
+  "Costa Rica": [
+    {
+      "id": "nestor-reveron",
+      "first_name": "Nestor",
+      "last_name": "Reveron"
+    }
+  ],
+  "Switzerland": [
+    {
+      "id": "thomas-wechsler",
+      "first_name": "Thomas",
+      "last_name": "Wechsler"
+    }
+  ],
+  "Netherlands": [
+    {
+      "id": "roelant-dieben",
+      "first_name": "Roelant",
+      "last_name": "Dieben"
+    }
+  ],
+  "Ukraine": [
+    {
+      "id": "dmytro-doroshenko",
+      "first_name": "Dmytro",
+      "last_name": "Doroshenko"
+    }
+  ],
+  "Turkey": [
+    {
+      "id": "maksim-rotar",
+      "first_name": "Maksim",
+      "last_name": "Rotar"
+    }
+  ],
+  "Sweden": [
+    {
+      "id": "digvijay-chauhan",
+      "first_name": "Digvijay",
+      "last_name": "Chauhan"
+    }
+  ],
+  "Hungary": [
+    {
+      "id": "otto-gudszent",
+      "first_name": "Otto",
+      "last_name": "Gudszent"
+    }
+  ],
+  "Israel": [
+    {
+      "id": "shlomi-rachamim",
+      "first_name": "Shlomi",
+      "last_name": "Rachamim"
+    }
+  ],
+  "Germany": [
+    {
+      "id": "heyko-oelrichs",
+      "first_name": "Heyko",
+      "last_name": "Oelrichs"
+    }
   ]
 }
