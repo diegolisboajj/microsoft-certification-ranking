@@ -33,15 +33,15 @@ jobs:
         run: |
           mkdir -p datasource_ms
           chmod +x fetch_all_ms_countries.py
-          python3 fetch_all_ms_countries.py
+          python3 -u fetch_all_ms_countries.py
       
       - name: Generate rankings
         run: |
-          python3 generate_ms_rankings.py
+          python3 -u generate_ms_rankings.py
           
           # Conditionally run community ranking scripts if they exist and are executable
           if [ -f "generate_ms_brazil_community.py" ]; then
-            python3 generate_ms_brazil_community.py
+            python3 -u generate_ms_brazil_community.py
           fi
       
       - name: Commit and push rankings and CSVs

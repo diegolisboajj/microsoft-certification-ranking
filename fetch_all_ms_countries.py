@@ -48,10 +48,11 @@ def fetch_country_data(country, metadata):
     timeout = 1800 if country in large_countries else 600
     
     try:
+        # Don't capture output; let it print natively through the main terminal
+        # This prevents the CI workflow from looking 'frozen' during 11 hours of fetch
         result = subprocess.run(
-            [PYTHON_BIN, script, country],
+            [PYTHON_BIN, "-u", script, country],
             timeout=timeout,
-            capture_output=True,
             text=True
         )
         
