@@ -53,7 +53,7 @@ def fetch_user_badges_and_company(user_id, profile_url):
                     if 'Microsoft' in issuer.get('summary', {}).get('name', ''):
                         is_ms = True
                 
-                if is_ms and not is_badge_expired(badge.get('expires_at_date')):
+                if is_ms:
                     name = badge.get('badge_template', {}).get('name', '')
                     if name: unique_badge_names.add(name)
             
@@ -100,17 +100,53 @@ def main():
         print("❌ No users found!")
         return
 
+    # Inject manually known missing users
+    known_missing_file = 'known_missing_users.json'
+    if os.path.exists(known_missing_file):
+        try:
+            with open(known_missing_file, 'r') as f:
+                known_users = json.load(f)
+                missing_for_country = known_users.get('Brazil', [])
+                for user_obj in missing_for_country:
+                    username = user_obj.get('id')
+                    print(f"  Injecting known missing user: {username}")
+                    directory_users.append({
+                        'id': username, 
+                        'first_name': user_obj.get('first_name', ''),
+                        'last_name': user_obj.get('last_name', ''),
+                        'url': f"/users/{username}/badges"
+                    })
+        except: pass
+
     print(f"\n📂 Fetching MS badges for {len(directory_users)} users...")
-    final_users = []
+    grouped_results = {}
+    
     with ThreadPoolExecutor(max_workers=15) as executor:
         futures = {executor.submit(fetch_user_badges_and_company, u['id'], u.get('url', '')): u for u in directory_users}
         for i, future in enumerate(as_completed(futures), 1):
             u_data = futures[future]
-            cnt, comp = future.result()
+            try:
+                cnt, comp = future.result()
+            except:
+                cnt, comp = 0, ''
+                
             if cnt > 0:
                 name = ' '.join(filter(None, [u_data.get('first_name'), u_data.get('middle_name'), u_data.get('last_name')]))
-                final_users.append({'name': name, 'badges': cnt, 'company': comp, 'profile_url': u_data.get('url')})
-            if i % 50 == 0: print(f"  Progress: {i}/{len(directory_users)}")
+                if name not in grouped_results:
+                    grouped_results[name] = {
+                        'name': name, 
+                        'badges': cnt, 
+                        'company': comp, 
+                        'profile_url': u_data.get('url')
+                    }
+                else:
+                    grouped_results[name]['badges'] += cnt
+                    if not grouped_results[name]['company'] and comp:
+                        grouped_results[name]['company'] = comp
+            
+            if i % 10 == 0: print(f"  Progress: {i}/{len(directory_users)}")
+
+    final_users = list(grouped_results.values())
 
     sorted_users = sorted(final_users, key=lambda x: (-x['badges'], x['name'].lower()))
     

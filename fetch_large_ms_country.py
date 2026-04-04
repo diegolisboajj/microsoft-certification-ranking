@@ -56,11 +56,9 @@ def fetch_user_badges(user_id):
                         is_ms = True
 
                 if is_ms:
-                    expires_at_date = badge.get('expires_at_date')
-                    if not is_badge_expired(expires_at_date):
-                        badge_template = badge.get('badge_template', {})
-                        name = badge_template.get('name', '')
-                        if name: unique_badge_names.add(name)
+                    badge_template = badge.get('badge_template', {})
+                    name = badge_template.get('name', '')
+                    if name: unique_badge_names.add(name)
             
             page += 1
             if page > 10: break

@@ -65,7 +65,7 @@ def fetch_user_badges(user_id):
                     if issuer_name == 'Microsoft':
                         is_ms = True
                 
-                if is_ms and not is_badge_expired(badge.get('expires_at_date')):
+                if is_ms:
                     if name and name not in EXCLUDED_BADGES:
                         unique_badge_names.add(name)
             

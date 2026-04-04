@@ -1,6 +1,6 @@
 # 🌊 TOP 10 Microsoft Certifications - Oceania
 
-> Last updated: April 03, 2026 at 22:57 UTC
+> Last updated: April 03, 2026 at 23:32 UTC
 
 ## 🏆 Top 10 Microsoft Certifications Leaders
 
@@ -34,9 +34,9 @@
 
 ## 📊 Statistics
 
-- **Total Certified Users**: 70
-- **Total Badges Earned**: 316
-- **Average Badges per User**: 4.51
+- **Total Certified Users**: 69
+- **Total Badges Earned**: 315
+- **Average Badges per User**: 4.57
 - **Highest Badge Count**: 20
 
 ---

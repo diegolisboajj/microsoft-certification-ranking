@@ -122,7 +122,7 @@ def load_metadata():
     return {}
 
 def read_all_csv_files(base_path):
-    users = []
+    grouped_users = {}
     csv_files = glob.glob(os.path.join(base_path, 'datasource_ms', 'ms-certs-*.csv'))
     print(f"📂 Processing {len(csv_files)} MS CSV files...")
     
@@ -130,6 +130,10 @@ def read_all_csv_files(base_path):
         filename = os.path.basename(csv_file)
         country = filename.replace('ms-certs-', '').replace('.csv', '')
         country_display = country.replace('-', ' ').title()
+        # Fix Title Case for special countries
+        if country_display == 'United States': country_display = 'USA'
+        if country_display == 'United Kingdom': country_display = 'UK'
+        
         continent = get_continent(country)
         
         try:
@@ -144,18 +148,28 @@ def read_all_csv_files(base_path):
                         profile_url = row.get('profile_url', '').strip('"').strip()
                         
                         full_name = ' '.join(filter(None, [first_name, middle_name, last_name]))
-                        
-                        users.append({
-                            'name': full_name,
-                            'badges': badge_count,
-                            'country': country_display,
-                            'continent': continent,
-                            'profile_url': profile_url
-                        })
+                        if not full_name: continue
+
+                        if full_name not in grouped_users:
+                            grouped_users[full_name] = {
+                                'name': full_name,
+                                'badges': badge_count,
+                                'country': country_display,
+                                'continent': continent,
+                                'profile_url': profile_url
+                            }
+                        else:
+                            # Sum badges for existing user
+                            grouped_users[full_name]['badges'] += badge_count
+                            # Prefer non-empty profile URL if current is empty
+                            if not grouped_users[full_name]['profile_url'] and profile_url:
+                                grouped_users[full_name]['profile_url'] = profile_url
+
         except Exception as e:
             print(f"⚠️  Error processing {csv_file}: {e}")
             
-    print(f"✅ Loaded {len(users)} users from all files")
+    users = list(grouped_users.values())
+    print(f"✅ Loaded {len(users)} unique users from all files")
     return users
 
 def generate_markdown_top10(users, title, filename, filter_func=None):
