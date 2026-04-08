@@ -13,6 +13,7 @@ import sys
 import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
+from fetch_ms_learn import fetch_learn_cert_names, fetch_learn_profile_url
 
 # Microsoft issuers on Credly
 MICROSOFT_ISSUER_IDS = {
@@ -126,34 +127,62 @@ def fetch_country_data(country):
             print(f"  Error on page {page}: {e}")
             break
     
-    # Inject manually known missing users
+    # Inject manually known missing users (supports Credly-only, Learn-only, or manual entry)
     known_missing_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'known_missing_users.json')
+    learn_only_users = []  # Users with ms_learn_username but no Credly id
     if os.path.exists(known_missing_file):
         try:
             with open(known_missing_file, 'r') as f:
                 known_users = json.load(f)
                 missing_for_country = known_users.get(country, [])
                 for user_obj in missing_for_country:
-                    username = user_obj.get('id')
-                    print(f"  Injecting known missing user: {username}")
-                    # Force a very high badge count to ensure they get tested in the top 100
-                    all_users.append({
-                        'id': username, 
-                        'badge_count': 9999,
-                        'first_name': user_obj.get('first_name', ''),
-                        'last_name': user_obj.get('last_name', ''),
-                        'url': f"/users/{username}/badges"
-                    })
+                    credly_id = user_obj.get('id')
+                    ms_learn_username = user_obj.get('ms_learn_username')
+
+                    if credly_id:
+                        # Standard Credly user (Credly is the source of truth)
+                        print(f"  Injecting known missing user (Credly): {credly_id}")
+                        all_users.append({
+                            'id': credly_id,
+                            'badge_count': 9999,
+                            'first_name': user_obj.get('first_name', ''),
+                            'last_name': user_obj.get('last_name', ''),
+                            'url': f"/users/{credly_id}/badges",
+                        })
+                    elif ms_learn_username:
+                        # Learn-only user: certs must be provided manually in JSON
+                        # (Microsoft Learn credentials API requires authentication)
+                        manual_names = user_obj.get('cert_names', [])
+                        if manual_names:
+                            print(f"  Injecting Learn-only user (manual): {ms_learn_username}")
+                            learn_only_users.append(user_obj)
+                        else:
+                            print(f"  ⚠️  Skipping {ms_learn_username}: no cert_names provided in JSON")
         except: pass
 
+    # Add Learn-only users directly with their manually provided cert data
+    for user_obj in learn_only_users:
+        ms_learn_username = user_obj.get('ms_learn_username')
+        manual_names = user_obj.get('cert_names', [])
+        synthetic_id = f'__learn__{ms_learn_username}'
+        all_users.append({
+            'id': synthetic_id,
+            'badge_count': len(manual_names),
+            'first_name': user_obj.get('first_name', ''),
+            'last_name': user_obj.get('last_name', ''),
+            'url': fetch_learn_profile_url(ms_learn_username),
+            'badge_names': '|'.join(sorted(manual_names)),
+            '_learn_resolved': True,
+        })
+        print(f"    ✅ {ms_learn_username}: {len(manual_names)} cert(s) from manual entry")
+
     if all_users:
-        # Sort by directory badge_count (includes expired) to get top candidates
-        all_users_sorted = sorted(all_users, key=lambda x: x.get('badge_count', 0), reverse=True)
-        # Check top 100 candidates (plenty for a Top 10)
+        credly_candidates = [u for u in all_users if not u.get('_learn_resolved')]
+        all_users_sorted = sorted(credly_candidates, key=lambda x: x.get('badge_count', 0), reverse=True)
         top_candidates = all_users_sorted[:min(100, len(all_users_sorted))]
         
-        print(f"  Fetching detailed MS badges for top {len(top_candidates)} candidates...")
-        user_badge_data = {} # Will store set of names
+        print(f"  Fetching detailed MS badges for top {len(top_candidates)} Credly candidates...")
+        user_badge_data = {}
         
         with ThreadPoolExecutor(max_workers=10) as executor:
             future_to_user = {
@@ -162,18 +191,18 @@ def fetch_country_data(country):
             }
             for future in as_completed(future_to_user):
                 user_id = future_to_user[future]
-                try: 
+                try:
                     badge_names_set = future.result()
-                except: 
+                except:
                     badge_names_set = set()
                 user_badge_data[user_id] = badge_names_set
         
-        # Update badge counts and names
-        for user in all_users:
+        # Update badge counts and names for Credly users
+        for user in credly_candidates:
             user_id = user.get('id')
             badge_names_set = user_badge_data.get(user_id, set())
             user['badge_count'] = len(badge_names_set)
-            user['badge_names'] = "|".join(sorted(list(badge_names_set)))
+            user['badge_names'] = '|'.join(sorted(list(badge_names_set)))
     
     return all_users
 

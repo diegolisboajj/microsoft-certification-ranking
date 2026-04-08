@@ -1,6 +1,6 @@
 # 🗽 TOP 10 Microsoft Certifications - Americas
 
-> Last updated: April 04, 2026 at 11:42 UTC
+> Last updated: April 08, 2026 at 20:36 UTC
 
 ## 🏆 Top 10 Microsoft Certifications Leaders
 
@@ -15,7 +15,7 @@
 | #7 | [Rafael Barros](https://www.credly.com/users/rbarros/badges) | 18 | Avanade | Brazil |
 | #8 | [Deivid De Foggi](https://www.credly.com/users/deivid-de-foggi/badges) | 17 | Microsoft | Brazil |
 | #9 | [Filipe Duarte](https://www.credly.com/users/filipe-duarte.3c29541f/badges) | 16 |  | Brazil |
-| #10 | [Yan Borowski Machado](https://www.credly.com/users/yan-borowski-machado/badges) | 14 | Avanade | Brazil |
+| #10 | [Felipe Augusto](https://www.credly.com/users/felipementel/badges) | 15 | Avanade | Brazil |
 
 ---
 
@@ -24,16 +24,16 @@
 | Rank | Company | Total Badges | Certified Users |
 |------|---------|--------------|-----------------|
 | 🥇 #1 | Cloud | 105 | 1 |
-| 🥈 #2 | Avanade | 95 | 4 |
+| 🥈 #2 | Avanade | 96 | 4 |
 | 🥉 #3 | Microsoft | 84 | 3 |
 
 ---
 
 ## 📊 Statistics
 
-- **Total Certified Users**: 140
-- **Total Badges Earned**: 662
-- **Average Badges per User**: 4.73
+- **Total Certified Users**: 141
+- **Total Badges Earned**: 676
+- **Average Badges per User**: 4.79
 - **Highest Badge Count**: 105
 
 ---

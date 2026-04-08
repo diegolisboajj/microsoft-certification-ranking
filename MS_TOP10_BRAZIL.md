@@ -1,6 +1,6 @@
 # 🇧🇷 TOP 10 Microsoft Certifications - Brazil
 
-> Last updated: April 04, 2026 at 11:41 UTC
+> Last updated: April 08, 2026 at 20:36 UTC
 
 ## 🏆 Top 10 Microsoft Certifications Leaders
 
@@ -13,9 +13,9 @@
 | #5 | [Rafael Barros](https://www.credly.com/users/rbarros/badges) | 18 | Avanade | Brazil |
 | #6 | [Deivid De Foggi](https://www.credly.com/users/deivid-de-foggi/badges) | 17 | Microsoft | Brazil |
 | #7 | [Filipe Duarte](https://www.credly.com/users/filipe-duarte.3c29541f/badges) | 16 |  | Brazil |
-| #8 | [Yan Borowski Machado](https://www.credly.com/users/yan-borowski-machado/badges) | 14 | Avanade | Brazil |
-| #9 | [Victor Fuctuoso](https://www.credly.com/users/victor-fuctuoso/badges) | 11 | Avanade Brazil | Brazil |
-| #10 | [Fabrizzio Casamento](https://www.credly.com/users/fabrizzio-casamento/badges)<br>[Joao Marcelo Domingos Bruno](https://www.credly.com/users/joao-marcelo-domingos-bruno/badges) | 10 | Technology<br> | Brazil<br>Brazil |
+| #8 | [Felipe Augusto](https://www.credly.com/users/felipementel/badges) | 15 | Avanade | Brazil |
+| #9 | [Yan Borowski Machado](https://www.credly.com/users/yan-borowski-machado/badges) | 14 | Avanade | Brazil |
+| #10 | [Victor Fuctuoso](https://www.credly.com/users/victor-fuctuoso/badges) | 11 | Avanade Brazil | Brazil |
 
 ---
 
@@ -23,18 +23,17 @@
 
 | Rank | Company | Total Badges | Certified Users |
 |------|---------|--------------|-----------------|
-| 🥇 #1 | Avanade | 95 | 4 |
+| 🥇 #1 | Avanade | 110 | 5 |
 | 🥈 #2 | Microsoft | 44 | 2 |
 | 🥉 #3 | Avanade Brazil | 11 | 1 |
-| #4 | Technology | 10 | 1 |
 
 ---
 
 ## 📊 Statistics
 
-- **Total Certified Users**: 41
-- **Total Badges Earned**: 348
-- **Average Badges per User**: 8.49
+- **Total Certified Users**: 42
+- **Total Badges Earned**: 362
+- **Average Badges per User**: 8.62
 - **Highest Badge Count**: 36
 
 ---
